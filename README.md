@@ -1,19 +1,20 @@
-<img width="1424" height="788" alt="image" src="https://github.com/user-attachments/assets/b8a409fe-edf5-43c6-8b59-7d5233b97298" /># Eixo-5
-Arquitetura de Dados em Nuvem
+# Eixo-5 Arquitetura de Dados em Nuvem
 
 # Projeções Demográficas e Saúde Pública: Uma Arquitetura de Dados em Nuvem para o SUS
 `Tecnologia em Banco de Dados`
 `2025/2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+ O projeto tem como foco a construção de uma arquitetura de dados em nuvem para analisar os impactos do envelhecimento da população brasileira sobre o Sistema Único de Saúde (SUS). A proposta parte da projeção populacional disponibilizada pelo IBGE, que mostra o crescimento da idade média da população, e cruza esses dados com informações públicas do SUS relacionadas à mortalidade (SIM), internações hospitalares (SIH/SUS) e atenção ambulatorial (SIA/SUS). A integração dessas bases permitirá uma visão unificada e confiável para compreender como o avanço da idade média afetará a demanda por serviços de saúde no Brasil.
+
+ A partir dessa arquitetura, será possível aplicar técnicas de análise e previsão, com o objetivo de antecipar os principais impactos do envelhecimento populacional nos serviços de saúde pública. O projeto busca identificar tendências de maior incidência de doenças, aumento de internações e crescimento da necessidade de atendimentos ambulatoriais, fornecendo insights para o planejamento estratégico do SUS. Assim, a solução proposta não apenas promove a modernização da gestão de dados em saúde, mas também contribui para apoiar políticas públicas mais eficazes e sustentáveis diante do desafio do envelhecimento populacional.
 
 ## Integrantes
-Bianca Costa de Oliveira
-Daniela Moreira da Silva
-Douglas Daniel Alves Ferreira Torres
-Gian Henrique Queiroz Alves
-Rafael Silva de Alcantara
-Viviane da Silva Rocha
+Bianca Costa de Oliveira,
+Daniela Moreira da Silva,
+Douglas Daniel Alves Ferreira Torres,
+Gian Henrique Queiroz Alves,
+Rafael Silva de Alcantara,
+Viviane da Silva Rocha.
 
 ## Orientador
 Cristiano Geraldo Teixeira Silva
