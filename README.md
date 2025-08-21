@@ -4,17 +4,20 @@
 `Tecnologia em Banco de Dados`
 `2025/2`
 
- O projeto tem como foco a construção de uma arquitetura de dados em nuvem para analisar os impactos do envelhecimento da população brasileira sobre o Sistema Único de Saúde (SUS). A proposta parte da projeção populacional disponibilizada pelo IBGE, que mostra o crescimento da idade média da população, e cruza esses dados com informações públicas do SUS relacionadas à mortalidade (SIM), internações hospitalares (SIH/SUS) e atenção ambulatorial (SIA/SUS). A integração dessas bases permitirá uma visão unificada e confiável para compreender como o avanço da idade média afetará a demanda por serviços de saúde no Brasil.
-
- A partir dessa arquitetura, será possível aplicar técnicas de análise e previsão, com o objetivo de antecipar os principais impactos do envelhecimento populacional nos serviços de saúde pública. O projeto busca identificar tendências de maior incidência de doenças, aumento de internações e crescimento da necessidade de atendimentos ambulatoriais, fornecendo insights para o planejamento estratégico do SUS. Assim, a solução proposta não apenas promove a modernização da gestão de dados em saúde, mas também contribui para apoiar políticas públicas mais eficazes e sustentáveis diante do desafio do envelhecimento populacional.
+O projeto visa construir uma arquitetura de dados em nuvem para analisar os impactos do envelhecimento da população brasileira sobre o Sistema Único de Saúde (SUS), integrando dados do IBGE sobre projeção populacional com informações públicas do SIM, SIH e SIA/SUS. O objetivo é identificar tendências de mortalidade, internações e atendimentos ambulatoriais, permitindo prever a demanda futura por serviços de saúde e fornecer insights estratégicos para apoiar políticas públicas e gestão eficiente dos recursos do SUS.
 
 ## Integrantes
-Bianca Costa de Oliveira,
-Daniela Moreira da Silva,
-Douglas Daniel Alves Ferreira Torres,
-Gian Henrique Queiroz Alves,
-Rafael Silva de Alcantara,
-Viviane da Silva Rocha.
+Bianca Costa de Oliveira
+
+Daniela Moreira da Silva
+
+Douglas Daniel Alves Ferreira Torres
+
+Gian Henrique Queiroz Alves
+
+Rafael Silva de Alcantara
+
+Viviane da Silva Rocha
 
 ## Orientador
 Cristiano Geraldo Teixeira Silva
