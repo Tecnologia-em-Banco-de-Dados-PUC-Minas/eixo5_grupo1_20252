@@ -25,8 +25,6 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
   <img src="arquivos/er_mortalidade.PNG" alt="Diagrama ER" width="600"/>
 </p>
 
-<div align="center">
-
 | Campo                      | Tipo    | Descrição                                                           |
 | -------------------------- | ------- | ------------------------------------------------------------------- |
 | idF\_MORTALIDADE           | INTEGER | Identificador único da ocorrência de mortalidade (chave surrogate). |
@@ -36,15 +34,11 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | D\_REGIAO\_idD\_REGIAO     | INTEGER | Chave estrangeira que referencia a região do óbito.                 |
 | qtde\_Obitos               | INTEGER | Quantidade de óbitos registrados no período e contexto analisado.   |
 
-</div>
-
 ### 2.Tabela Fato: F_INTERNACOES
 
 <p align="center">
   <img src="arquivos/er_internacoes.PNG" alt="Diagrama ER" width="600"/>
 </p>
-
-<div align="center">
 
 | Campo                      | Tipo    | Descrição                                                                              |
 | -------------------------- | ------- | -------------------------------------------------------------------------------------- |
@@ -57,15 +51,11 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | dias\_Internacoes          | DECIMAL | Número total de dias de permanência hospitalar das internações.                        |
 | valor\_Internacoes         | DECIMAL | Valor financeiro associado às internações no período.                                  |
 
-</div>
-
 ### 3.Tabela Fato: F_AMBULATORIAL
 
 <p align="center">
   <img src="arquivos/er_ambulatorial.PNG" alt="Diagrama ER" width="600"/>
 </p>
-
-<div align="center">
 
 | Campo                                        | Tipo    | Descrição                                                                                 |
 | -------------------------------------------- | ------- | ----------------------------------------------------------------------------------------- |
@@ -78,15 +68,11 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | qted\_Atendimentos                           | INTEGER | Quantidade de atendimentos ambulatoriais realizados no período.                           |
 | valor\_Procedimento                          | DECIMAL | Valor associado ao procedimento ambulatorial.                                             |
 
-</div>
-
 ### 4.Tabela Fato: F_POPULACAO
 
 <p align="center">
   <img src="arquivos/er_populacao.PNG" alt="Diagrama ER" width="600"/>
 </p>
-
-<div align="center">
 
 | Campo                  | Tipo    | Descrição                                                                        |
 | ---------------------- | ------- | -------------------------------------------------------------------------------- |
@@ -95,11 +81,7 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | D\_REGIAO\_idD\_REGIAO | INTEGER | Chave estrangeira que referencia a dimensão região (estado e município).         |
 | total\_Populacao       | INTEGER | Total da população estimada ou projetada para o período e região correspondente. |
 
-</div>
-
 ### 5.Tabela Dimensão: D_TEMPO
-
-<div align="center">
 
   | Campo      | Tipo     | Descrição                                     |
 | ---------- | -------- | ----------------------------------------------- |
@@ -109,11 +91,7 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | trimestre  | SMALLINT | Número do trimestre (1 a 4).                    |
 | decada     | INT      | Década de referência (ex: 1990, 2000).          |
 
-</div>
-
 ### 6.Tabela Dimensão: D_REGIAO
-
-<div align="center">
 
 | Campo       | Tipo         | Descrição                                        |
 | ----------- | ------------ | ------------------------------------------------ |
@@ -121,11 +99,7 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | uf          | VARCHAR(2)   | Unidade federativa (sigla do estado).            |
 | municipio   | VARCHAR(100) | Nome do município da ocorrência.                 |
 
-</div>
-
 ### 7.Tabela Dimensão: D_PACIENTE
-
-<div align="center">
 
 | Campo         | Tipo    | Descrição                                          |
 | ------------- | ------- | -------------------------------------------------- |
@@ -135,11 +109,7 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | faixa\_Etaria | INTEGER | Código da faixa etária do paciente.                |
 | raça\_Cor     | INTEGER | Código da raça/cor do paciente.                    |
 
-</div>
-
 ### 8.Tabela Dimensão: D_CID
-
-<div align="center">
 
 | Campo      | Tipo         | Descrição                                                |
 | ---------- | ------------ | -------------------------------------------------------- |
@@ -148,19 +118,13 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | cid10      | VARCHAR(7)   | Código CID-10 da doença/causa.                           |
 | grupo\_Cid | VARCHAR(100) | Grupo ou categoria de doenças.                           |
 
-</div>
-
 ### 9.Tabela Dimensão: D_PROCEDIMENTO_AMB
-
-<div align="center">
   
 | Campo                  | Tipo         | Descrição                                                           |
 | ---------------------- | ------------ | ------------------------------------------------------------------- |
 | idD\_PROCEDIMENTO\_AMB | INTEGER      | Identificador único do procedimento ambulatorial (chave surrogate). |
 | cod\_Procedimento      | INTEGER      | Código do procedimento ambulatorial (tabela SIGTAP ou similar).     |
 | desc\_Procedimento     | VARCHAR(255) | Descrição detalhada do procedimento ambulatorial.                   |
-
-</div>
 
 ## **Análise Exploratória de Dados (EDA)**
 
