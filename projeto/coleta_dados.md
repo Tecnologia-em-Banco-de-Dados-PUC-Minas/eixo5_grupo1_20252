@@ -1,5 +1,3 @@
-# Especificação do Processo de Arquitetura de Dados
-
 ## **Introdução**
 
 O presente documento descreve o processo de implementação da arquitetura de dados proposta para o projeto de Ciência de Dados do 5º semestre do curso de Tecnologia em Banco de Dados, ministrado pela PUC Minas. O objetivo é detalhar, de forma técnica, cada etapa envolvida, a fim de garantir clareza no fluxo de informações desde a sua origem até a disponibilização de insights analíticos. A arquitetura foi concebida para assegurar escalabilidade, governança e confiabilidade dos resultados.
@@ -8,10 +6,14 @@ O presente documento descreve o processo de implementação da arquitetura de da
 
 As fontes de dados constituem o ponto de partida do projeto. Os dados serão extraídos do site do do SUS. Essas fontes consistem em diversos arquivos externos no formato .dbc, que deverão ser descompactados e, posteriormente, convertidos em CSV. Elas fornecem dados estruturados e não estruturados, os quais serão integrados ao pipeline.
 
-## **Ingestão e Armazenamento de Dados
+## **Ingestão e Armazenamento de Dados**
 
 Os dados coletados são inicialmente armazenados em sua forma bruta em um repositório centralizado e escalável no Microsoft Fabric.
 A etapa de ELT (Extract, Load, Transform), realizada por meio da linguagem Python, consistirá na coleta, carregamento e padronização dos dados. Nessa fase, são aplicadas transformações para corrigir inconsistências, remover duplicidades e uniformizar formatos. O resultado é um conjunto de dados tratado e preparado para armazenamento.
+
+<p align="center">
+  <img src="arquivos/fluxograma_arquitetura.PNG" alt="Fluxo da Arquitetura" width="600"/>
+</p>
 
 ## **Análise Exploratória de Dados (EDA)**
 
