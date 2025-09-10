@@ -17,7 +17,150 @@ A etapa de ELT (Extract, Load, Transform), realizada por meio da linguagem Pytho
 
 ## **Modelagem de Dados**
 
+A partir das bases de dados levantadas, foram identificadas quatro tabelas fato principais, cada uma acompanhada de suas respectivas dimensões. A seguir apresentamos os modelos:
 
+### 1. Tabela Fato: F_MORTALIDADE
+
+<p align="center">
+  <img src="arquivos/er_mortalidade.PNG" alt="Diagrama ER" width="600"/>
+</p>
+
+<div align="center">
+
+| Campo                      | Tipo    | Descrição                                                           |
+| -------------------------- | ------- | ------------------------------------------------------------------- |
+| idF\_MORTALIDADE           | INTEGER | Identificador único da ocorrência de mortalidade (chave surrogate). |
+| D\_PACIENTE\_idD\_PACIENTE | INTEGER | Chave estrangeira que referencia o paciente (dimensão paciente).    |
+| D\_TEMPO\_idD\_TEMPO       | INTEGER | Chave estrangeira que referencia a dimensão tempo.                  |
+| D\_CID\_idD\_CID           | INTEGER | Chave estrangeira que referencia a dimensão CID (causa do óbito).   |
+| D\_REGIAO\_idD\_REGIAO     | INTEGER | Chave estrangeira que referencia a região do óbito.                 |
+| qtde\_Obitos               | INTEGER | Quantidade de óbitos registrados no período e contexto analisado.   |
+
+</div>
+
+### 2.Tabela Fato: F_INTERNACOES
+
+<p align="center">
+  <img src="arquivos/er_internacoes.PNG" alt="Diagrama ER" width="600"/>
+</p>
+
+<div align="center">
+
+| Campo                      | Tipo    | Descrição                                                                              |
+| -------------------------- | ------- | -------------------------------------------------------------------------------------- |
+| idF\_INTERNACOES           | INTEGER | Identificador único da ocorrência de internação (chave surrogate).                     |
+| D\_CID\_idD\_CID           | INTEGER | Chave estrangeira que referencia a dimensão CID (diagnóstico principal da internação). |
+| D\_PACIENTE\_idD\_PACIENTE | INTEGER | Chave estrangeira que referencia a dimensão paciente.                                  |
+| D\_TEMPO\_idD\_TEMPO       | INTEGER | Chave estrangeira que referencia a dimensão tempo (data da internação).                |
+| D\_REGIAO\_idD\_REGIAO     | INTEGER | Chave estrangeira que referencia a dimensão região (local da internação).              |
+| qtde\_Internacoes          | INTEGER | Quantidade de internações registradas no período e contexto analisado.                 |
+| dias\_Internacoes          | DECIMAL | Número total de dias de permanência hospitalar das internações.                        |
+| valor\_Internacoes         | DECIMAL | Valor financeiro associado às internações no período.                                  |
+
+</div>
+
+### 3.Tabela Fato: F_AMBULATORIAL
+
+<p align="center">
+  <img src="arquivos/er_ambulatorial.PNG" alt="Diagrama ER" width="600"/>
+</p>
+
+<div align="center">
+
+| Campo                                        | Tipo    | Descrição                                                                                 |
+| -------------------------------------------- | ------- | ----------------------------------------------------------------------------------------- |
+| idF\_AMBULATORIAL                            | INTEGER | Identificador único da ocorrência ambulatorial (chave surrogate).                         |
+| D\_TEMPO\_idD\_TEMPO                         | INTEGER | Chave estrangeira que referencia a dimensão tempo (data do atendimento).                  |
+| D\_PACIENTE\_idD\_PACIENTE                   | INTEGER | Chave estrangeira que referencia a dimensão paciente.                                     |
+| D\_CID\_idD\_CID                             | INTEGER | Chave estrangeira que referencia a dimensão CID (diagnóstico relacionado ao atendimento). |
+| D\_PROCEDIMENTO\_AMB\_idD\_PROCEDIMENTO\_AMB | INTEGER | Chave estrangeira que referencia a dimensão procedimento ambulatorial.                    |
+| D\_REGIAO\_idD\_REGIAO                       | INTEGER | Chave estrangeira que referencia a dimensão região (local do atendimento).                |
+| qted\_Atendimentos                           | INTEGER | Quantidade de atendimentos ambulatoriais realizados no período.                           |
+| valor\_Procedimento                          | INTEGER | Valor associado ao procedimento ambulatorial.                                             |
+
+</div>
+
+### 4.Tabela Fato: F_POPULACAO
+
+<p align="center">
+  <img src="arquivos/er_populacao.PNG" alt="Diagrama ER" width="600"/>
+</p>
+
+<div align="center">
+
+| Campo                  | Tipo    | Descrição                                                                        |
+| ---------------------- | ------- | -------------------------------------------------------------------------------- |
+| idF\_POPULACAO         | INTEGER | Identificador único do registro de população (chave surrogate).                  |
+| D\_TEMPO\_idD\_TEMPO   | INTEGER | Chave estrangeira que referencia a dimensão tempo (ano, mês, trimestre, década). |
+| D\_REGIAO\_idD\_REGIAO | INTEGER | Chave estrangeira que referencia a dimensão região (estado e município).         |
+| total\_Populacao       | INTEGER | Total da população estimada ou projetada para o período e região correspondente. |
+
+</div>
+
+### 5.Tabela Dimensão: D_TEMPO
+
+<div align="center">
+
+  | Campo      | Tipo     | Descrição                                       |
+| ---------- | -------- | ----------------------------------------------- |
+| idD\_TEMPO | INTEGER  | Identificador único do tempo (chave surrogate). |
+| ano        | INT      | Ano do registro do óbito.                       |
+| mes        | SMALLINT | Número do mês (1 a 12).                         |
+| trimestre  | SMALLINT | Número do trimestre (1 a 4).                    |
+| decada     | INT      | Década de referência (ex: 1990, 2000).          |
+
+</div>
+
+### 6.Tabela Dimensão: D_REGIAO
+
+<div align="center">
+
+| Campo       | Tipo         | Descrição                                        |
+| ----------- | ------------ | ------------------------------------------------ |
+| idD\_REGIAO | INTEGER      | Identificador único da região (chave surrogate). |
+| uf          | VARCHAR(2)   | Unidade federativa (sigla do estado).            |
+| municipio   | VARCHAR(100) | Nome do município da ocorrência.                 |
+
+</div>
+
+### 7.Tabela Dimensão: D_PACIENTE
+
+<div align="center">
+
+| Campo         | Tipo    | Descrição                                          |
+| ------------- | ------- | -------------------------------------------------- |
+| idD\_PACIENTE | INTEGER | Identificador único do paciente (chave surrogate). |
+| sexo          | CHAR(1) | Sexo do paciente (M/F).                            |
+| idade         | INTEGER | Idade do paciente no momento do óbito.             |
+| faixa\_Etaria | INTEGER | Código da faixa etária do paciente.                |
+| raça\_Cor     | INTEGER | Código da raça/cor do paciente (padrão IBGE).      |
+
+</div>
+
+### 8.Tabela Dimensão: D_CID
+
+<div align="center">
+
+| Campo      | Tipo         | Descrição                                                |
+| ---------- | ------------ | -------------------------------------------------------- |
+| idD\_CID   | INTEGER      | Identificador único da causa do óbito (chave surrogate). |
+| desc\_Cid  | VARCHAR(255) | Descrição da doença/causa segundo CID-10.                |
+| cid10      | VARCHAR(7)   | Código CID-10 da doença/causa.                           |
+| grupo\_Cid | VARCHAR(100) | Grupo ou categoria de doenças.                           |
+
+</div>
+
+### 9.Tabela Dimensão: D_PROCEDIMENTO_AMB
+
+<div align="center">
+  
+| Campo                  | Tipo         | Descrição                                                           |
+| ---------------------- | ------------ | ------------------------------------------------------------------- |
+| idD\_PROCEDIMENTO\_AMB | INTEGER      | Identificador único do procedimento ambulatorial (chave surrogate). |
+| cod\_Procedimento      | INTEGER      | Código do procedimento ambulatorial (tabela SIGTAP ou similar).     |
+| desc\_Procedimento     | VARCHAR(255) | Descrição detalhada do procedimento ambulatorial.                   |
+
+</div>
 
 ## **Análise Exploratória de Dados (EDA)**
 
