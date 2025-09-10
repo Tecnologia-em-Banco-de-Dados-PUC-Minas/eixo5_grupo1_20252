@@ -76,7 +76,7 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | D\_PROCEDIMENTO\_AMB\_idD\_PROCEDIMENTO\_AMB | INTEGER | Chave estrangeira que referencia a dimensão procedimento ambulatorial.                    |
 | D\_REGIAO\_idD\_REGIAO                       | INTEGER | Chave estrangeira que referencia a dimensão região (local do atendimento).                |
 | qted\_Atendimentos                           | INTEGER | Quantidade de atendimentos ambulatoriais realizados no período.                           |
-| valor\_Procedimento                          | INTEGER | Valor associado ao procedimento ambulatorial.                                             |
+| valor\_Procedimento                          | DECIMAL | Valor associado ao procedimento ambulatorial.                                             |
 
 </div>
 
@@ -101,10 +101,10 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 
 <div align="center">
 
-  | Campo      | Tipo     | Descrição                                       |
+  | Campo      | Tipo     | Descrição                                     |
 | ---------- | -------- | ----------------------------------------------- |
 | idD\_TEMPO | INTEGER  | Identificador único do tempo (chave surrogate). |
-| ano        | INT      | Ano do registro do óbito.                       |
+| ano        | INT      | Ano do registro.                                |
 | mes        | SMALLINT | Número do mês (1 a 12).                         |
 | trimestre  | SMALLINT | Número do trimestre (1 a 4).                    |
 | decada     | INT      | Década de referência (ex: 1990, 2000).          |
@@ -131,9 +131,9 @@ A partir das bases de dados levantadas, foram identificadas quatro tabelas fato 
 | ------------- | ------- | -------------------------------------------------- |
 | idD\_PACIENTE | INTEGER | Identificador único do paciente (chave surrogate). |
 | sexo          | CHAR(1) | Sexo do paciente (M/F).                            |
-| idade         | INTEGER | Idade do paciente no momento do óbito.             |
+| idade         | INTEGER | Idade do paciente.                                 |
 | faixa\_Etaria | INTEGER | Código da faixa etária do paciente.                |
-| raça\_Cor     | INTEGER | Código da raça/cor do paciente (padrão IBGE).      |
+| raça\_Cor     | INTEGER | Código da raça/cor do paciente.                    |
 
 </div>
 
