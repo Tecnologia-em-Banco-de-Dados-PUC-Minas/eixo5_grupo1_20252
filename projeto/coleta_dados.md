@@ -15,6 +15,10 @@ A etapa de ELT (Extract, Load, Transform), realizada por meio da linguagem Pytho
   <img src="arquivos/fluxograma_arquitetura.PNG" alt="Fluxo da Arquitetura" width="600"/>
 </p>
 
+## **Modelagem de Dados**
+
+
+
 ## **Análise Exploratória de Dados (EDA)**
 
 A análise exploratória tem como finalidade compreender o perfil dos dados. Serão aplicadas técnicas estatísticas e de visualização para identificar distribuições, correlações e padrões relevantes. Para essa etapa, será utilizada a linguagem de programação Python, com bibliotecas como pandas e matplotlib.
