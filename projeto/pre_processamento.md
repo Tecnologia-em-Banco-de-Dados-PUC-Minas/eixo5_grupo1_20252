@@ -8,6 +8,10 @@ Na terceira fase do projeto, os dados já foram reunidos e encontram-se disponí
 
 Para a análise dos dados, optamos por utilizar o modelo de arquitetura em medalhão, que organiza as informações em camadas progressivas de qualidade e refinamento. Durante essa etapa, identificamos que os arquivos no formato .csv estavam segmentados por mês. Assim, na camada bronze, centralizamos e armazenamos esses conjuntos de dados brutos em três repositórios do **SharePoint**, garantindo uma melhor estruturação e facilidade de gerenciamento das informações. 
 
+<p align="center">
+  <img src="arquivos/pre_processamento_1.png" alt="Sharepoint" width="600"/>
+</p>
+
 **Camada Silver**
 
 Para o tratamento inicial dos dados, optamos por utilizar a ferramenta **Dataflow Gen2**, disponível no Fabric, com o objetivo de simplificar e agilizar o processo de transformação por meio do **Power Query**. Durante essa etapa, enfrentamos alguns desafios, já que trabalhamos com três bases de dados distintas, o que exigiu a padronização dos formatos dos campos existentes.
