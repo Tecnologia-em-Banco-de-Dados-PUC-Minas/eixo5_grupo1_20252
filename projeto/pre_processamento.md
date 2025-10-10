@@ -56,4 +56,18 @@ Optamos por aproveitar ao máximo as ferramentas disponíveis no Fabric, com o o
 
 Com isso, concluímos a etapa de pré-processamento, resultando em uma base de dados consistente e de alta qualidade, pronta para ser utilizada nas etapas de aprendizado de máquina e análises avançadas.
 
+## **Referências**
+
+BRASIL. Ministério da Saúde. Sigtap — Sistema de Gerenciamento da Tabela de Procedimentos, Medicamentos e OPM do SUS. Disponível em: https://sigtap.datasus.gov.br/
+. Acesso em: 10 out. 2025.
+
+IBGE. Códigos dos Municípios. Disponível em: https://www.ibge.gov.br/explica/codigos-dos-municipios.php
+. Acesso em: 10 out. 2025.
+
+BRASIL. Ministério da Saúde. CID-10 – Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (versão 2008). Disponível em: https://www2.datasus.gov.br/cid10/V2008/download.htm
+. Acesso em: 10 out. 2025.
+
+Microsoft. Entender a arquitetura de lakehouse medallion para Microsoft Fabric com OneLake. Disponível em: https://learn.microsoft.com/pt-br/fabric/onelake/onelake-medallion-lakehouse-architecture
+. Acesso em: 10 out. 2025.
+
 
