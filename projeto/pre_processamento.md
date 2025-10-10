@@ -46,6 +46,14 @@ Concluímos, assim, a camada ouro, composta por três tabelas fato interligadas 
   <img src="arquivos/pre_processamento_3.png" alt="Sharepoint" width="600"/>
 </p>
 
+<p align="center">
+  <img src="arquivos/modelo_semantico.png" alt="Sharepoint" width="600"/>
+</p>
 
+### **Conclusão**
+
+Optamos por aproveitar ao máximo as ferramentas disponíveis no Fabric, com o objetivo de tornar o processo de tratamento dos dados mais ágil e eficiente. Para a criação das tabelas fato e dimensão, o uso do PySpark permitiu modelar os dados de forma simples, estruturada e objetiva.
+
+Com isso, concluímos a etapa de pré-processamento, resultando em uma base de dados consistente e de alta qualidade, pronta para ser utilizada nas etapas de aprendizado de máquina e análises avançadas.
 
 
