@@ -20,5 +20,9 @@ Padronizamos a coluna Sexo para os valores “F” e “M”, e realizamos um ma
 
 Após a padronização, passamos para a etapa de limpeza, removendo colunas que não seriam utilizadas nas análises e excluindo linhas com valores nulos, garantindo assim uma base mais consistente e confiável para a próxima etapa. 
 
+<p align="center">
+  <img src="arquivos/pre_processamento_2.png" alt="Sharepoint" width="600"/>
+</p>
+
 **Camada Ouro**
 
