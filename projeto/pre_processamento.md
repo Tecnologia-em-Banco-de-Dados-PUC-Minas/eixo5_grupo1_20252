@@ -42,5 +42,10 @@ Essas tabelas auxiliares permitiram enriquecer o modelo, agregando descrições 
 
 Concluímos, assim, a camada ouro, composta por três tabelas fato interligadas às suas respectivas dimensões, estruturadas e preparadas para a etapa de modelagem e aplicação dos algoritmos de aprendizado de máquina. 
 
+<p align="center">
+  <img src="arquivos/pre_processamento_3.png" alt="Sharepoint" width="600"/>
+</p>
+
+
 
 
