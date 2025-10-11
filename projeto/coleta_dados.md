@@ -12,7 +12,7 @@ Os dados coletados são inicialmente armazenados em sua forma bruta em um reposi
 A etapa de ELT (Extract, Load, Transform), realizada por meio da linguagem Python, consistirá na coleta, carregamento e padronização dos dados. Nessa fase, são aplicadas transformações para corrigir inconsistências, remover duplicidades e uniformizar formatos. O resultado é um conjunto de dados tratado e preparado para armazenamento.
 
 <p align="center">
-  <img src="arquivos/fluxograma_arquitetura.PNG" alt="Fluxo da Arquitetura" width="600"/>
+  <img src="arquivos/fluxograma_arquiteturav2.PNG" alt="Fluxo da Arquitetura" width="600"/>
 </p>
 
 ## **Modelagem de Dados**
