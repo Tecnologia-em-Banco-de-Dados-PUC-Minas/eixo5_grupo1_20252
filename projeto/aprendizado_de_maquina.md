@@ -63,7 +63,7 @@ Cada base contém **três artefatos**; ao clicar, será direcionado à opção s
 
 
 > **Resumo — modelos, intuito e o que esperar**
-Este guia organiza as principais **famílias de modelos de ML** para você escolher rápido o candidato certo e julgar a qualidade sem mistério. A ideia é prática: cada família traz **quando usar**, **métricas ideais** e **regras de bolso** (limiares típicos) para saber se o resultado está **bom** ou **ruim**, sempre a comparar com um **baseline** simples.
+Este guia apresenta as **principais famílias de modelos de aprendizagem de máquina**, com o objetivo de possibilitar a rápida seleção do candidato adequado e a avaliação clara da qualidade. A proposta é prática: para cada família, indicam-se quando utilizar, as métricas recomendadas e regras práticas (limiares usuais) para determinar se o resultado é satisfatório ou insatisfatório.
 
 **🔍 Famílias e intuito**
 - **Classificação**: prever rótulos (sim/não, multi-classes). Útil para crédito, churn, fraude.  
@@ -74,11 +74,10 @@ Este guia organiza as principais **famílias de modelos de ML** para você escol
 - **Detecção de Anomalia**: achar casos raros/atípicos com mínimo alarme falso.
 
 **🔍 Ao abrir cada seção, você verá:**
-- **Quando usar**: em que tipos de dados/problemas o modelo brilha.
+- **Quando usar**: em que tipos de dados/problemas o modelo é adequado.
 - **Métricas certas**: o que medir para não se enganar (ex.: AUPRC em dados desbalanceados).
 - **Regras de bolso**: valores de referência (ex.: AUC > 0.75 “bom”) para um primeiro crivo.
-- **Sinais de alerta**: dicas rápidas de overfit, underfit ou *tuning* mal feito.
-- **Nota de domínio**: lembre-se de ajustar *thresholds* conforme o **custo do erro** (FP vs. FN) no seu caso real.
+
 
 ## 📢Famílias ##
 
@@ -222,20 +221,8 @@ Isolation Forest / One-Class SVM / Autoencoders
 
 
 
-## 💡 Dicas Práticas
+## 💡 Glossário
 
-- **Sempre compare com baseline**:  
-  - Classificação: AUC baseline = 0.5; **AUPRC baseline = prevalência**  
-  - Regressão: compare RMSE/MAE com **σ(y)** e com modelo ingênuo (média/último valor)
-- **Validação correta**: k-fold estratificado (i.i.d.) ou **validação temporal** (séries)  
-- **Significância**: diferenças **< 1–2 p.p.** podem não ser estatisticamente relevantes  
-- **Calibração**: use **Brier** e curvas de calibração quando a probabilidade vira decisão  
-- **Custo do erro**: ajuste **threshold** p/ otimizar **precisão/recall** conforme impacto de FP/FN
-
-------
-
-<details>
-  <summary><strong>Glossário rápido de métricas</strong></summary>
 
 - **AUC-ROC**: prob. de ranquear positivo acima do negativo (0.5 = aleatório).  
 - **AUPRC**: área sob precisão × recall; baseline = prevalência.  
@@ -250,7 +237,7 @@ Isolation Forest / One-Class SVM / Autoencoders
 - **Calinski-Harabasz / Davies–Bouldin**: índices de qualidade de cluster (maior/melhor e menor/melhor, respectivamente).  
 - **Precision@K / Recall@K / NDCG@K**: métricas de ranking/top-K em recomendação.  
 
-</details>
+
 
 
 
