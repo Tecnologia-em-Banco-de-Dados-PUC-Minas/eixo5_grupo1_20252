@@ -11,7 +11,6 @@ A etapa de **ETL / feature engineering / dados** foi tratada anteriormente; aqui
 
 Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **Google Colab**.
 
-
 ---
 
 ## 📚 Sumário — Artefatos de ML
@@ -24,52 +23,72 @@ Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **
 
 Cada **base** possui **quatro artefatos**:
 
-| Base | Modelos | Códigos | Métricas | Conclusões|
+| Base | Modelos | Códigos | Métricas | Conclusões |
 |---|---|---|---|---|
-| **Ambulatorial** | [`Ambulatorial/modelos`](Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
-| **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
-| **Mortalidade** | [`Mortalidade/modelos/`](Mortalidade/modelos/) | [`Mortalidade/codigos/`](Mortalidade/codigos/) | [`Mortalidade/metricas/`](Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/) |
-
-## 🗂️ Organização por Base de Dados
-
+| **Ambulatorial** | [`projeto/Ambulatorial/modelos/`](./projeto/Ambulatorial/modelos/) | [`projeto/Ambulatorial/codigos/`](./projeto/Ambulatorial/codigos/) | [`projeto/Ambulatorial/metricas/`](./projeto/Ambulatorial/metricas/) | [`projeto/Ambulatorial/conclusoes/`](./projeto/Ambulatorial/conclusoes/) |
+| **Internações** | [`projeto/Internacoes/modelos/`](./projeto/Internacoes/modelos/) | [`projeto/Internacoes/codigos/`](./projeto/Internacoes/codigos/) | [`projeto/Internacoes/metricas/`](./projeto/Internacoes/metricas/) | [`projeto/Internacoes/conclusoes/`](./projeto/Internacoes/conclusoes/) |
+| **Mortalidade** | [`projeto/Mortalidade/modelos/`](./projeto/Mortalidade/modelos/) | [`projeto/Mortalidade/codigos/`](./projeto/Mortalidade/codigos/) | [`projeto/Mortalidade/metricas/`](./projeto/Mortalidade/metricas/) | [`projeto/Mortalidade/conclusoes/`](./projeto/Mortalidade/conclusoes/) |
 
 ---
+
+<a id="sum-modelos"></a>
+### 🧠 Modelos de Machine Learning
+- **Ambulatorial:** [`./projeto/Ambulatorial/modelos/`](./projeto/Ambulatorial/modelos/)  
+- **Internações:** [`./projeto/Internacoes/modelos/`](./projeto/Internacoes/modelos/)  
+- **Mortalidade:** [`./projeto/Mortalidade/modelos/`](./projeto/Mortalidade/modelos/)
+
+<a id="sum-codigos"></a>
+### 💻 Códigos
+- **Ambulatorial:** [`./projeto/Ambulatorial/codigos/`](./projeto/Ambulatorial/codigos/)  
+- **Internações:** [`./projeto/Internacoes/codigos/`](./projeto/Internacoes/codigos/)  
+- **Mortalidade:** [`./projeto/Mortalidade/codigos/`](./projeto/Mortalidade/codigos/)
+
+<a id="sum-metricas"></a>
+### 📈 Métricas
+- **Ambulatorial:** [`./projeto/Ambulatorial/metricas/`](./projeto/Ambulatorial/metricas/)  
+- **Internações:** [`./projeto/Internacoes/metricas/`](./projeto/Internacoes/metricas/)  
+- **Mortalidade:** [`./projeto/Mortalidade/metricas/`](./projeto/Mortalidade/metricas/)
+
+<a id="sum-conclusoes"></a>
+### ✅ Conclusões
+- **Ambulatorial:** [`./projeto/Ambulatorial/conclusoes/`](./projeto/Ambulatorial/conclusoes/)  
+- **Internações:** [`./projeto/Internacoes/conclusoes/`](./projeto/Internacoes/conclusoes/)  
+- **Mortalidade:** [`./projeto/Mortalidade/conclusoes/`](./projeto/Mortalidade/conclusoes/)
+
+---
+
+## 🗂️ Organização por Base de Dados
 
 <details>
   <summary><b>Ambulatorial</b></summary>
 
-**Artefatos**
-- **Modelos** → catálogo e configs dos modelos avaliados: [`Ambulatorial/modelos/`](Ambulatorial/modelos/)
-- **Códigos** → notebooks/scripts de ML: [`Ambulatorial/codigos/`](Ambulatorial/codigos/)
-- **Métricas** → resultados e gráficos: [`Ambulatorial/metricas/`](Ambulatorial/metricas/)
-- **Conclusões** → resumo interpretável: [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/)
+**Artefatos**  
+- **Modelos:** [`./projeto/Ambulatorial/modelos/`](./projeto/Ambulatorial/modelos/)  
+- **Códigos:** [`./projeto/Ambulatorial/codigos/`](./projeto/Ambulatorial/codigos/)  
+- **Métricas:** [`./projeto/Ambulatorial/metricas/`](./projeto/Ambulatorial/metricas/)  
+- **Conclusões:** [`./projeto/Ambulatorial/conclusoes/`](./projeto/Ambulatorial/conclusoes/)
 
 </details>
-
----
 
 <details>
   <summary><b>Internações</b></summary>
 
-**Artefatos**
-- **Modelos** → catálogo e configs: [`Internacoes/modelos/`](Internacoes/modelos/)
-- **Códigos** → notebooks/scripts de ML: [`Internacoes/codigos/`](Internacoes/codigos/)
-- **Métricas** → resultados e gráficos: [`Internacoes/metricas/`](Internacoes/metricas/)
-- **Conclusões** → resumo interpretável: [`Internacoes/conclusoes/`](Internacoes/conclusoes/)
+**Artefatos**  
+- **Modelos:** [`./projeto/Internacoes/modelos/`](./projeto/Internacoes/modelos/)  
+- **Códigos:** [`./projeto/Internacoes/codigos/`](./projeto/Internacoes/codigos/)  
+- **Métricas:** [`./projeto/Internacoes/metricas/`](./projeto/Internacoes/metricas/)  
+- **Conclusões:** [`./projeto/Internacoes/conclusoes/`](./projeto/Internacoes/conclusoes/)
 
 </details>
 
----
-
 <details>
-  
   <summary><b>Mortalidade</b></summary>
 
-**Artefatos**
-- **Modelos/** → catálogo e configs: [`Mortalidade/modelos/`](Mortalidade/modelos/)
-- **Códigos/** → notebooks/scripts de ML: [`Mortalidade/codigos/`](Mortalidade/codigos/)
-- **Métricas/** → resultados e gráficos: [`Mortalidade/metricas/`](Mortalidade/metricas/)
-- **Conclusões/** → resumo interpretável: [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/)
+**Artefatos**  
+- **Modelos:** [`./projeto/Mortalidade/modelos/`](./projeto/Mortalidade/modelos/)  
+- **Códigos:** [`./projeto/Mortalidade/codigos/`](./projeto/Mortalidade/codigos/)  
+- **Métricas:** [`./projeto/Mortalidade/metricas/`](./projeto/Mortalidade/metricas/)  
+- **Conclusões:** [`./projeto/Mortalidade/conclusoes/`](./projeto/Mortalidade/conclusoes/)
 
 </details>
 
