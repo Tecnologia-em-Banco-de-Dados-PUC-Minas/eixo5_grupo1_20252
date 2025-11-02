@@ -26,8 +26,8 @@ Cada **base** possui **quatro artefatos**:
 
 | Base | Modelos | Códigos | Métricas | Conclusões |
 |---|---|---|---|---|
-| **Ambulatorial** | [`modelo.internacoes.md/`](Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
-| **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/metricas/`](Internacoes/metricas/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
+| **Ambulatorial** | [`Ambulatorial/modelos`](Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
+| **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/metricas/`](modelo.internacoes.md/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
 | **Mortalidade** | [`Mortalidade/modelos/`](Mortalidade/modelos/) | [`Mortalidade/codigos/`](Mortalidade/codigos/) | [`Mortalidade/metricas/`](Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/) |
 
 ## 🗂️ Organização por Base de Dados
