@@ -1,85 +1,126 @@
 # 🧠 Machine Learning por Base de Dados
 **Bases:** Ambulatorial • Internações • Mortalidade
 
-Este repositório documenta exclusivamente o **Machine Learning** aplicado sobre três bases de dados de saúde:
-**Ambulatorial**, **Internações** e **Mortalidade**.  
+Este repositório documenta exclusivamente o **Machine Learning** aplicado às bases **Ambulatorial**, **Internações** e **Mortalidade**.  
 A etapa de **ETL / feature engineering / dados** foi tratada anteriormente; aqui mantemos apenas os **artefatos de ML**:
-**códigos**, **métricas** e **conclusões**.
 
-- Linguagem/Framework: **PySpark (Python)**
-- Ambiente suportado: **Microsoft Fabric (Lakehouse / Notebook)** e **Google Colab (Notebook)**
+- **Modelos** → catálogo dos **Modelos de Machine Learning** avaliados e escolhidos (descrições, configs, versões)
+- **Códigos** → notebooks/scripts de ML (treino, validação, comparação)
+- **Métricas** → resultados (tabelas, gráficos, relatórios)
+- **Conclusões** → síntese das descobertas e decisões
+
+Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **Google Colab**.
 
 ---
 
-## 📚 Sumário
-- [Organização por Base de Dados](#-organização-por-base-de-dados)
-- [Como Executar](#-como-executar)
-  - [Google Colab](#opção-a-google-colab)
-  - [Microsoft Fabric](#opção-b-microsoft-fabric)
-- [Padrões e Convenções](#-padrões-e-convenções)
-- [Templates Úteis](#-templates-úteis)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
+## 📚 Sumário — Artefatos de ML
+- [Modelos de Machine Learning](#sum-modelos) — catálogo/versões & rationale
+- [Códigos](#sum-codigos) — notebooks/scripts de treino e avaliação
+- [Métricas](#sum-metricas) — resultados consolidados
+- [Conclusões](#sum-conclusoes) — resumo interpretável para decisão
 
 ---
 
 ## 🗂️ Organização por Base de Dados
-Cada **base de dados** possui três **artefatos de ML**:
+Cada **base** possui **quatro artefatos**:
 
-- **codigos/** → notebooks/scripts de ML (treino, validação, comparação de modelos)
-- **metricas/** → resultados (tabelas, gráficos, relatórios)
-- **conclusoes/** → síntese das descobertas e decisões (interpretável para stakeholders)
+| Base | Modelos | Códigos | Métricas | Conclusões |
+|---|---|---|---|---|
+| **Ambulatorial** | [`Ambulatorial/modelos/`](Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
+| **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/metricas/`](Internacoes/metricas/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
+| **Mortalidade** | [`Mortalidade/modelos/`](Mortalidade/modelos/) | [`Mortalidade/codigos/`](Mortalidade/codigos/) | [`Mortalidade/metricas/`](Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/) |
 
-| Base de dados | Códigos (ML) | Métricas | Conclusões |
-|---|---|---|---|
-| **Ambulatorial** | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
-| **Internações** | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/metricas/`](Internacoes/metricas/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
-| **Mortalidade** | [`Mortalidade/codigos/`](Mortalidade/codigos/) | [`Mortalidade/metricas/`](Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/) |
+## 🗂️ Organização por Base de Dados
 
-<details>
-  <summary><b>Ambulatorial — artefatos de ML</b></summary>
-
-- **Códigos (ML):** [`Ambulatorial/codigos/`](Ambulatorial/codigos/)  
-  Notebooks/scripts de treino, validação, comparação de modelos e exportação de previsões.
-- **Métricas:** [`Ambulatorial/metricas/`](Ambulatorial/metricas/)  
-  CSV/PNG/HTML com AUC, F1, ACC, matriz de confusão, curvas ROC/PR, calibração etc.
-- **Conclusões:** [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/)  
-  Síntese das descobertas, modelo escolhido, limiares e próximos passos.
-
-</details>
-
-<details>
-  <summary><b>Internações — artefatos de ML</b></summary>
-
-- **Códigos (ML):** [`Internacoes/codigos/`](Internacoes/codigos/)  
-- **Métricas:** [`Internacoes/metricas/`](Internacoes/metricas/)  
-- **Conclusões:** [`Internacoes/conclusoes/`](Internacoes/conclusoes/)
-
-</details>
-
-<details>
-  <summary><b>Mortalidade — artefatos de ML</b></summary>
-
-- **Códigos (ML):** [`Mortalidade/codigos/`](Mortalidade/codigos/)  
-- **Métricas:** [`Mortalidade/metricas/`](Mortalidade/metricas/)  
-- **Conclusões:** [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/)
-
-</details>
-
-> **Observação técnica:** se os fences (\`\`\`) dentro de `<details>` ficarem em **uma linha só** no preview, troque por `<pre><code> ... </code></pre>`.
 
 ---
 
-## 🚀 Como Executar
+<details>
+  <summary><b>Ambulatorial</b></summary>
 
-### Opção A) Google Colab
-```python
-# Dependências mínimas
-!pip install -q pyspark==3.5.1
+**Artefatos**
+- **Modelos** → catálogo e configs dos modelos avaliados: [`Ambulatorial/modelos/`](Ambulatorial/modelos/)
+- **Códigos** → notebooks/scripts de ML: [`Ambulatorial/codigos/`](Ambulatorial/codigos/)
+- **Métricas** → resultados e gráficos: [`Ambulatorial/metricas/`](Ambulatorial/metricas/)
+- **Conclusões** → resumo interpretável: [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/)
 
-from pyspark.sql import SparkSession
-spark = (SparkSession.builder.appName("Saude-ML").getOrCreate())
+<pre><code>Ambulatorial
+ ├─ modelos/
+ │   ├─ 00_catalogo.md
+ │   ├─ logreg.yaml
+ │   ├─ random_forest.yaml
+ │   └─ gbt_spark.yaml
+ ├─ codigos/
+ │   ├─ 01_treinamento_modelos_ml.ipynb
+ │   ├─ 02_avaliacao_modelos_ml.ipynb
+ │   └─ utils_ml.py
+ ├─ metricas/
+ │   ├─ resultados_ambulatorial.csv
+ │   ├─ matriz_confusao.png
+ │   └─ curvas_roc_pr.png
+ └─ conclusoes/
+     └─ README.md
+</code></pre>
+</details>
 
-# Exemplo de leitura de base (ajuste o caminho conforme sua organização)
-df = spark.read.parquet("data/ambulatorial/processed/*.parquet")
-df.printSchema()
+---
+
+<details>
+  <summary><b>Internações</b></summary>
+
+**Artefatos**
+- **Modelos** → catálogo e configs: [`Internacoes/modelos/`](Internacoes/modelos/)
+- **Códigos** → notebooks/scripts de ML: [`Internacoes/codigos/`](Internacoes/codigos/)
+- **Métricas** → resultados e gráficos: [`Internacoes/metricas/`](Internacoes/metricas/)
+- **Conclusões** → resumo interpretável: [`Internacoes/conclusoes/`](Internacoes/conclusoes/)
+
+<pre><code>Internacoes
+ ├─ modelos/
+ │   ├─ 00_catalogo.md
+ │   ├─ logreg.yaml
+ │   ├─ random_forest.yaml
+ │   └─ gbt_spark.yaml
+ ├─ codigos/
+ │   ├─ 01_treinamento_modelos_ml.ipynb
+ │   ├─ 02_avaliacao_modelos_ml.ipynb
+ │   └─ utils_ml.py
+ ├─ metricas/
+ │   ├─ resultados_internacoes.csv
+ │   ├─ matriz_confusao.png
+ │   └─ curvas_roc_pr.png
+ └─ conclusoes/
+     └─ README.md
+</code></pre>
+</details>
+
+---
+
+<details>
+  <summary><b>Mortalidade</b></summary>
+
+**Artefatos**
+- **modelos/** → catálogo e configs: [`Mortalidade/modelos/`](Mortalidade/modelos/)
+- **codigos/** → notebooks/scripts de ML: [`Mortalidade/codigos/`](Mortalidade/codigos/)
+- **metricas/** → resultados e gráficos: [`Mortalidade/metricas/`](Mortalidade/metricas/)
+- **conclusoes/** → resumo interpretável: [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/)
+
+<pre><code>Mortalidade
+ ├─ modelos/
+ │   ├─ 00_catalogo.md
+ │   ├─ logreg.yaml
+ │   ├─ random_forest.yaml
+ │   └─ gbt_spark.yaml
+ ├─ codigos/
+ │   ├─ 01_treinamento_modelos_ml.ipynb
+ │   ├─ 02_avaliacao_modelos_ml.ipynb
+ │   └─ utils_ml.py
+ ├─ metricas/
+ │   ├─ resultados_mortalidade.csv
+ │   ├─ matriz_confusao.png
+ │   └─ curvas_roc_pr.png
+ └─ conclusoes/
+     └─ README.md
+</code></pre>
+</details>
+
+
