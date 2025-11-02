@@ -23,7 +23,6 @@ Todos os artefatos aqui apresentados encontram-se na pasta: **machine learning a
 
 ---
 
-## 🗂️ Organização por Base de Dados
 Cada **base** possui **quatro artefatos**:
 
 | Base | Modelos | Códigos | Métricas | Conclusões |
@@ -46,23 +45,6 @@ Cada **base** possui **quatro artefatos**:
 - **Métricas** → resultados e gráficos: [`Ambulatorial/metricas/`](Ambulatorial/metricas/)
 - **Conclusões** → resumo interpretável: [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/)
 
-<pre><code>Ambulatorial
- ├─ modelos/
- │   ├─ 00_catalogo.md
- │   ├─ logreg.yaml
- │   ├─ random_forest.yaml
- │   └─ gbt_spark.yaml
- ├─ codigos/
- │   ├─ 01_treinamento_modelos_ml.ipynb
- │   ├─ 02_avaliacao_modelos_ml.ipynb
- │   └─ utils_ml.py
- ├─ metricas/
- │   ├─ resultados_ambulatorial.csv
- │   ├─ matriz_confusao.png
- │   └─ curvas_roc_pr.png
- └─ conclusoes/
-     └─ README.md
-</code></pre>
 </details>
 
 ---
@@ -76,53 +58,20 @@ Cada **base** possui **quatro artefatos**:
 - **Métricas** → resultados e gráficos: [`Internacoes/metricas/`](Internacoes/metricas/)
 - **Conclusões** → resumo interpretável: [`Internacoes/conclusoes/`](Internacoes/conclusoes/)
 
-<pre><code>Internacoes
- ├─ modelos/
- │   ├─ 00_catalogo.md
- │   ├─ logreg.yaml
- │   ├─ random_forest.yaml
- │   └─ gbt_spark.yaml
- ├─ codigos/
- │   ├─ 01_treinamento_modelos_ml.ipynb
- │   ├─ 02_avaliacao_modelos_ml.ipynb
- │   └─ utils_ml.py
- ├─ metricas/
- │   ├─ resultados_internacoes.csv
- │   ├─ matriz_confusao.png
- │   └─ curvas_roc_pr.png
- └─ conclusoes/
-     └─ README.md
-</code></pre>
 </details>
 
 ---
 
 <details>
+  
   <summary><b>Mortalidade</b></summary>
 
 **Artefatos**
-- **modelos/** → catálogo e configs: [`Mortalidade/modelos/`](Mortalidade/modelos/)
-- **codigos/** → notebooks/scripts de ML: [`Mortalidade/codigos/`](Mortalidade/codigos/)
-- **metricas/** → resultados e gráficos: [`Mortalidade/metricas/`](Mortalidade/metricas/)
-- **conclusoes/** → resumo interpretável: [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/)
+- **Modelos/** → catálogo e configs: [`Mortalidade/modelos/`](Mortalidade/modelos/)
+- **Códigos/** → notebooks/scripts de ML: [`Mortalidade/codigos/`](Mortalidade/codigos/)
+- **Métricas/** → resultados e gráficos: [`Mortalidade/metricas/`](Mortalidade/metricas/)
+- **Conclusões/** → resumo interpretável: [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/)
 
-<pre><code>Mortalidade
- ├─ modelos/
- │   ├─ 00_catalogo.md
- │   ├─ logreg.yaml
- │   ├─ random_forest.yaml
- │   └─ gbt_spark.yaml
- ├─ codigos/
- │   ├─ 01_treinamento_modelos_ml.ipynb
- │   ├─ 02_avaliacao_modelos_ml.ipynb
- │   └─ utils_ml.py
- ├─ metricas/
- │   ├─ resultados_mortalidade.csv
- │   ├─ matriz_confusao.png
- │   └─ curvas_roc_pr.png
- └─ conclusoes/
-     └─ README.md
-</code></pre>
 </details>
 
 
