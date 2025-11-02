@@ -5,27 +5,23 @@
 - **`valor_procedimento = 0`** em procedimentos que deveriam ter valor (ex.: quimioterapia) → indício de **dado faltante/supressão** ou regra de tarifação.
 - **Ruído de encoding** (ex.: `RA�PIDO`) → problema de **codificação** nas dimensões.
 
-**Implicação:** qualidade de dados pode distorcer métricas e o aprendizado do modelo.
 
 
 ### 2º Resultado
 - `prop_faixa_etaria = qtde_Atendimentos / total_ano`, mas `total_ano` é **global por ano**, não por município.
 - Proporções ficam **muito pequenas** e não refletem **estrutura demográfica local**.
 
-**Implicação:** a variável não captura **envelhecimento por município** e perde poder preditivo.
 
 
 ### 3º Resultado
 - Cálculo de idosos via **`idade_media >= 60`** no nível agregado.
 - Pode **subestimar/superestimar** idosos quando há mistura etária nas agregações.
 
-**Implicação:** usar **faixas etárias (60–69/70–79/80+)** por **(ano, município)**.
 
 ### 4º Resultado
 - **Linear Regression com R² ~ 1.0** → **vazamento de alvo**: `valor_procedimento` está nas features.
 - RF/GBT com **RMSE muito alto** → alvo com alta amplitude/outliers; métricas contaminadas pelo leakage.
 
-**Implicação:** resultados atuais **não são válidos** para comparar modelos.
 
 
 ### 5º Resultado
@@ -34,7 +30,7 @@
   1) **Leakage** invalida a interpretação.  
   2) **Mapeamento incorreto**: `featureImportances` está no nível **one-hot expandido**, mas os nomes não foram **expandidos/agrupados** por feature original.
 
-**Implicação:** importâncias **não são confiáveis** até corrigir leakage e o mapeamento.
+
 
 ## 🛠️ Próximos Passos (sintetizado)
 
