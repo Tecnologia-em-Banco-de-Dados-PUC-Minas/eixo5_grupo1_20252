@@ -23,11 +23,13 @@ Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **
 
 Cada **base** possui **quatro artefatos**:
 
+
 | Base | Modelos | Códigos | Métricas | Conclusões |
 |---|---|---|---|---|
-| **Ambulatorial** | [`projeto/Ambulatorial/modelos/`](./projeto/Ambulatorial/modelos/) | [`projeto/Ambulatorial/codigos/`](./projeto/Ambulatorial/codigos/) | [`projeto/Ambulatorial/metricas/`](./projeto/Ambulatorial/metricas/) | [`projeto/Ambulatorial/conclusoes/`](./projeto/Ambulatorial/conclusoes/) |
-| **Internações** | [`projeto/Internacoes/modelos/`](./projeto/Internacoes/modelos/) | [`projeto/Internacoes/codigos/`](./projeto/Internacoes/codigos/) | [`projeto/Internacoes/metricas/`](./projeto/Internacoes/metricas/) | [`projeto/Internacoes/conclusoes/`](./projeto/Internacoes/conclusoes/) |
-| **Mortalidade** | [`projeto/Mortalidade/modelos/`](./projeto/Mortalidade/modelos/) | [`projeto/Mortalidade/codigos/`](./projeto/Mortalidade/codigos/) | [`projeto/Mortalidade/metricas/`](./projeto/Mortalidade/metricas/) | [`projeto/Mortalidade/conclusoes/`](./projeto/Mortalidade/conclusoes/) |
+| **Ambulatorial** | [`Ambulatorial/modelos/`](./Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](./Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](./Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](./Ambulatorial/conclusoes/) |
+| **Internações** | [`Internacoes/modelos/`](./Internacoes/modelos/) | [`Internacoes/codigos/`](./Internacoes/codigos/) | [`Internacoes/metricas/`](./Internacoes/metricas/) | [`Internacoes/conclusoes/`](./Internacoes/conclusoes/) |
+| **Mortalidade** | [`Mortalidade/modelos/`](./Mortalidade/modelos/) | [`Mortalidade/codigos/`](./Mortalidade/codigos/) | [`Mortalidade/metricas/`](./Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](./Mortalidade/conclusoes/) |
+
 
 ---
 
