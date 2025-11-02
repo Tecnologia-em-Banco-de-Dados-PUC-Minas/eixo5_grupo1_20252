@@ -1,1 +1,39 @@
+# 🩺 Análises em Saúde com PySpark  
+**Ambulatorial • Internações • Mortalidade**
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](#)
+[![PySpark](https://img.shields.io/badge/PySpark-3.5+-E25A1C?logo=apachespark&logoColor=white)](#)
+[![Microsoft Fabric](https://img.shields.io/badge/Env-Microsoft%20Fabric-2F2F2F)](#)
+[![Google Colab](https://img.shields.io/badge/Notebook-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Este repositório organiza **pipelines e notebooks de aprendizado de máquina** em **PySpark (Python)**,
+executáveis no **Microsoft Fabric** e compatíveis com **Google Colab**.  
+Exploramos dados de saúde em três frentes: **Ambulatorial**, **Internações** e **Mortalidade** —
+com **códigos**, **métricas** e **conclusões** documentadas.
+
+---
+
+## 📚 Sumário
+- [Estrutura de Pastas](#-estrutura-de-pastas)
+- [Áreas de Análise](#-áreas-de-análise)
+- [Como Executar](#-como-executar)
+  - [Google Colab](#opção-a-google-colab)
+  - [Microsoft Fabric](#opção-b-microsoft-fabric)
+- [Dependências](#-dependências)
+- [Dados](#-dados)
+- [Resultados & Conclusões](#-resultados--conclusões)
+- [Padrões de Nome](#-padrões-de-nome)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
+
+---
+
+## 🗂️ Estrutura de Pastas
+
+> Cada domínio possui:
+> - `notebooks/`: notebooks PySpark com ETL → features → modelagem  
+> - `src/`: funções auxiliares (ETL, features, avaliação)  
+> - `conclusoes/`: resumo de métricas, insights e próximos passos
+
 
