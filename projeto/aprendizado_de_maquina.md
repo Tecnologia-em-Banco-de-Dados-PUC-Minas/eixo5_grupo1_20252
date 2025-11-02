@@ -11,6 +11,7 @@ A etapa de **ETL / feature engineering / dados** foi tratada anteriormente; aqui
 
 Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **Google Colab**.
 
+
 ---
 
 ## 📚 Sumário — Artefatos de ML
@@ -35,27 +36,27 @@ Cada **base** possui **quatro artefatos**:
 
 <a id="sum-modelos"></a>
 ### 🧠 Modelos de Machine Learning
-- **Ambulatorial:** [`./projeto/Ambulatorial/modelos/`](./projeto/Ambulatorial/modelos/)  
-- **Internações:** [`./projeto/Internacoes/modelos/`](./projeto/Internacoes/modelos/)  
-- **Mortalidade:** [`./projeto/Mortalidade/modelos/`](./projeto/Mortalidade/modelos/)
+- **Ambulatorial:** [`Ambulatorial/modelos/`](./Ambulatorial/modelos/)  
+- **Internações:** [`Internacoes/modelos/`](./Internacoes/modelos/)  
+- **Mortalidade:** [`/Mortalidade/modelos/`](.//Mortalidade/modelos/)
 
 <a id="sum-codigos"></a>
 ### 💻 Códigos
-- **Ambulatorial:** [`./projeto/Ambulatorial/codigos/`](./projeto/Ambulatorial/codigos/)  
-- **Internações:** [`./projeto/Internacoes/codigos/`](./projeto/Internacoes/codigos/)  
-- **Mortalidade:** [`./projeto/Mortalidade/codigos/`](./projeto/Mortalidade/codigos/)
+- **Ambulatorial:** [`Ambulatorial/codigos/`](./Ambulatorial/codigos/)  
+- **Internações:** [`Internacoes/codigos/`](./Internacoes/codigos/)  
+- **Mortalidade:** [`Mortalidade/codigos/`](./Mortalidade/codigos/)
 
 <a id="sum-metricas"></a>
 ### 📈 Métricas
-- **Ambulatorial:** [`./projeto/Ambulatorial/metricas/`](./projeto/Ambulatorial/metricas/)  
-- **Internações:** [`./projeto/Internacoes/metricas/`](./projeto/Internacoes/metricas/)  
-- **Mortalidade:** [`./projeto/Mortalidade/metricas/`](./projeto/Mortalidade/metricas/)
+- **Ambulatorial:** [`Ambulatorial/metricas/`](./Ambulatorial/metricas/)  
+- **Internações:** [`Internacoes/metricas/`](./Internacoes/metricas/)  
+- **Mortalidade:** [`Mortalidade/metricas/`](./Mortalidade/metricas/)
 
 <a id="sum-conclusoes"></a>
 ### ✅ Conclusões
-- **Ambulatorial:** [`./projeto/Ambulatorial/conclusoes/`](./projeto/Ambulatorial/conclusoes/)  
-- **Internações:** [`./projeto/Internacoes/conclusoes/`](./projeto/Internacoes/conclusoes/)  
-- **Mortalidade:** [`./projeto/Mortalidade/conclusoes/`](./projeto/Mortalidade/conclusoes/)
+- **Ambulatorial:** [`Ambulatorial/conclusoes/`](./Ambulatorial/conclusoes/)  
+- **Internações:** [`Internacoes/conclusoes/`](./Internacoes/conclusoes/)  
+- **Mortalidade:** [`Mortalidade/conclusoes/`](./Mortalidade/conclusoes/)
 
 ---
 
