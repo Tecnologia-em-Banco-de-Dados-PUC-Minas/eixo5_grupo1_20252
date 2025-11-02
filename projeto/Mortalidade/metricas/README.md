@@ -61,6 +61,10 @@
 
 | Váriavel | Impontância | 
 |----------|-------------|
-|LinearRegression|0.20637454266599922|0.9997674140371855|
-|    RandomForest|  8.046786795759118|  0.64639675502611|
-|             GBT|   6.24856462006486|0.7867781124730892|
+|nome_municipio_vec | 0.441271402|
+|cid10_vec | 0.0355194917|
+|faixa_etaria_vec | 0.0264907885|
+|prop_faixa_etaria | 0.0122749604|
+|idade_media | 0.0117311684|
+|qtde_Obitos | 0.0113819921|
+|prop_60plus | 0.0012779175|
