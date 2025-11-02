@@ -24,7 +24,7 @@ Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **
 
 Cada **base** possui **quatro artefatos**:
 
-| Base | Modelos | Códigos | Métricas | Conclusões |
+| Base | Modelos | Códigos | Métricas | Conclusões|
 |---|---|---|---|---|
 | **Ambulatorial** | [`Ambulatorial/modelos`](Ambulatorial/modelos/) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
 | **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
