@@ -11,6 +11,8 @@ A etapa de **ETL / feature engineering / dados** foi tratada anteriormente; aqui
 
 Ambiente: **PySpark (Python)** em **Microsoft Fabric (Notebook/Lakehouse)** e **Google Colab**.
 
+Todos os artefatos aqui apresentados encontram-se na pasta: **projeto/notebooks/machine learning artefatos**
+
 ---
 
 ## 📚 Sumário — Artefatos de ML
