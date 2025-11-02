@@ -32,7 +32,7 @@
 
 
 
-## 🛠️ Próximos Passos (sintetizado)
+## 🛠️ Próximos Passos
 
 ### Correções de Dados (prioridade)
 - [ ] Tratar **`valor_procedimento = 0`** (remover/atribuir “desconhecido”/modelar separadamente).
@@ -56,8 +56,7 @@
 - [ ] Tratar **alta cardinalidade** (top-k categorias + “OUTROS” para `cid10`/`procedimento`/`município`).
 
 ---
-### 📎 Nota rápida de implementação
-
+## 🔧 Esboço de correções (ideia de código)
 ```python
 # 1) Remover leakage imediatamente
 numeric_features = ["idade_media", "prop_faixa_etaria", "prop_60plus", "qtde_Atendimentos"]  # sem 'valor_procedimento'
