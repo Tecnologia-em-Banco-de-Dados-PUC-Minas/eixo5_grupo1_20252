@@ -27,9 +27,8 @@ Cada **base** possui **quatro artefatos**:
 
 | Base | Modelos | Códigos | Métricas | Conclusões |
 |---|---|---|---|---|
-| **Ambulatorial** | [`Ambulatorial/modelos/`](projeto/notebooks/machine learning artefatos/Ambulatorial
-/modelos.md
-) | [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
+| **Ambulatorial** | [`Ambulatorial/modelos/`](Ambulatorial/modelos/)
+| [`Ambulatorial/codigos/`](Ambulatorial/codigos/) | [`Ambulatorial/metricas/`](Ambulatorial/metricas/) | [`Ambulatorial/conclusoes/`](Ambulatorial/conclusoes/) |
 | **Internações** | [`Internacoes/modelos/`](Internacoes/modelos/) | [`Internacoes/codigos/`](Internacoes/codigos/) | [`Internacoes/metricas/`](Internacoes/metricas/) | [`Internacoes/conclusoes/`](Internacoes/conclusoes/) |
 | **Mortalidade** | [`Mortalidade/modelos/`](Mortalidade/modelos/) | [`Mortalidade/codigos/`](Mortalidade/codigos/) | [`Mortalidade/metricas/`](Mortalidade/metricas/) | [`Mortalidade/conclusoes/`](Mortalidade/conclusoes/) |
 
