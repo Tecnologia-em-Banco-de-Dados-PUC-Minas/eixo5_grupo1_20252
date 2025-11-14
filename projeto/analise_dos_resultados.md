@@ -22,7 +22,7 @@ A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas 
 
 
 **Mortalidade**   
-- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resuldados/README.md)  
+- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resultados/README.md)  
 
 
 
