@@ -13,7 +13,7 @@ A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas 
 
 **Ambulatorial**  
 - **Análise:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise.md/)
-- 
+  
 
 **Internações**  
 - **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise.md/)
