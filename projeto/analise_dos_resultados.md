@@ -29,6 +29,19 @@ A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas 
 
 
 
+**Ambulatorial**  
+- **Análise:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise_dos_resultados/)  
+
+
+
+**Internações**  
+- **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/)  
+
+
+
+**Mortalidade**   
+- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resuldados/)  
+
 
 
 
