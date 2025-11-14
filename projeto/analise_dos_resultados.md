@@ -3,6 +3,7 @@
 
 
 Este repositório documenta a **Análise dos Resultados** aplicada às bases Ambulatorial, Internações e Mortalidade.
+
 A etapa de Machine Learning foi tratada anteriormente; contudo, o **Relatório Completo da Execução do ML** encontra-se aqui disponibilizado.
 
 
