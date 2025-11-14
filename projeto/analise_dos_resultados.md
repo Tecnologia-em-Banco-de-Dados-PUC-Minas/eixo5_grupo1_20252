@@ -17,12 +17,12 @@ A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas 
 
 
 **Internações**  
-- **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/)  
+- **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/README.md)  
 
 
 
 **Mortalidade**   
-- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resuldados/)  
+- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resuldados/README.md)  
 
 
 
