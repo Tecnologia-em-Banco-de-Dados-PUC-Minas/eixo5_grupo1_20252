@@ -12,16 +12,16 @@ A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas 
 
 
 **Ambulatorial**  
-- **Análise:** [`Ambulatorial/conclusoes/`](./Ambulatorial/analise.md/)
+- **Análise:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise.md/)
 
 
 **Internações**  
-- **Análise:** [`Internacoes/conclusoes/`](./Internacoes/analise.md/)
+- **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise.md/)
 
 
 **Mortalidade**   
 
-- **Análise:** [`Mortalidade/conclusoes/`](./Mortalidade/analise.md/)
+- **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise.md/)
 
 
 
