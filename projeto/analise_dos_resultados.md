@@ -1,9 +1,9 @@
 # 💻📉 Análise dos Resultados 🩺💊
 
 
-Este repositório documenta exclusivamente a **Análise dos Resultados** aplicado às bases **Ambulatorial**, **Internações** e **Mortalidade**.  
-A etapa de **Machine Learning** foi tratada anteriormente; aqui mantemos apenas os **artefatos das conclusões dos resultados obtidos**
 
+Este repositório documenta a **Análise dos Resultados** aplicada às bases Ambulatorial, Internações e Mortalidade.
+A etapa de Machine Learning foi tratada anteriormente; contudo, o **Relatório Completo da Execução do ML** encontra-se aqui disponibilizado.
 
 
 ---
