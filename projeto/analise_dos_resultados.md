@@ -1,4 +1,4 @@
-# 💻📉 Análise de Resultados 🩺💊
+# 💻📉 Análise dos Resultados 🩺💊
 
 
 Este repositório documenta exclusivamente a **Análise dos Resultados** aplicado às bases **Ambulatorial**, **Internações** e **Mortalidade**.  
