@@ -1,166 +1,130 @@
-Detalhes da execução
+# 📊 **Relatório da Execução de Machine Learning**
+Este relatório consolida as **métricas**, **parâmetros**, **componentes do pipeline**, e **esquemas de entrada**, fornecendo uma visão organizada e comentada da execução do modelo.
 
-Métrica da execução (3)
-mae_test_df
-1.3615166936141914
-r2_test_df
-0.3651639748167451
-rmse_test_df
-1.9233688363748145
+---
 
-Parâmetros da execução (60)
-GBTRegressor.cacheNodeIds
-False
-GBTRegressor.checkpointInterval
-10
-GBTRegressor.featuresCol
-features
-GBTRegressor.featureSubsetStrategy
-all
-GBTRegressor.impurity
-variance
-GBTRegressor.labelCol
-valor_procedimento_log
-GBTRegressor.leafCol
-—
-GBTRegressor.lossType
-squared
-GBTRegressor.maxBins
-32
-GBTRegressor.maxDepth
-5
-GBTRegressor.maxIter
-100
-GBTRegressor.maxMemoryInMB
-256
-GBTRegressor.minInfoGain
-0.0
-GBTRegressor.minInstancesPerNode
-1
-GBTRegressor.minWeightFractionPerNode
-0.0
-GBTRegressor.predictionCol
-prediction
-GBTRegressor.seed
-276210194310129986
-GBTRegressor.stepSize
-0.1
-GBTRegressor.subsamplingRate
-1.0
-GBTRegressor.validationTol
-0.01
-OneHotEncoder_1.dropLast
-True
-OneHotEncoder_1.handleInvalid
-error
-OneHotEncoder_1.inputCols
-['nome_municipio_idx']
-OneHotEncoder_1.outputCol
-OneHotEncoder_80426919ed99__output
-OneHotEncoder_1.outputCols
-['nome_municipio_vec']
-OneHotEncoder_2.dropLast
-True
-OneHotEncoder_2.handleInvalid
-error
-OneHotEncoder_2.inputCols
-['faixa_etaria_idx']
-OneHotEncoder_2.outputCol
-OneHotEncoder_f3c46cb6176a__output
-OneHotEncoder_2.outputCols
-['faixa_etaria_vec']
-OneHotEncoder_3.dropLast
-True
-OneHotEncoder_3.handleInvalid
-error
-OneHotEncoder_3.inputCols
-['cid10_idx']
-OneHotEncoder_3.outputCol
-OneHotEncoder_e164f5b85391__output
-OneHotEncoder_3.outputCols
-['cid10_vec']
-OneHotEncoder_4.dropLast
-True
-OneHotEncoder_4.handleInvalid
-error
-OneHotEncoder_4.inputCols
-['nome_procedimento_idx']
-OneHotEncoder_4.outputCol
-OneHotEncoder_42d81d8c03fc__output
-OneHotEncoder_4.outputCols
-['nome_procedimento_vec']
-stages
-['StringIndexer_1', 'StringIndexer_2', 'StringIndexer_3', 'StringIndexer_4', 'OneHotEncoder_1', 'OneHotEncoder_2', 'OneHotEncoder_3', 'OneHotEncoder_4', 'VectorAssembler', 'GBTRegressor']
-StringIndexer_1.handleInvalid
-keep
-StringIndexer_1.inputCol
-nome_municipio
-StringIndexer_1.outputCol
-nome_municipio_idx
-StringIndexer_1.stringOrderType
-frequencyDesc
-StringIndexer_2.handleInvalid
-keep
-StringIndexer_2.inputCol
-faixa_etaria
-StringIndexer_2.outputCol
-faixa_etaria_idx
-StringIndexer_2.stringOrderType
-frequencyDesc
-StringIndexer_3.handleInvalid
-keep
-StringIndexer_3.inputCol
-cid10
-StringIndexer_3.outputCol
-cid10_idx
-StringIndexer_3.stringOrderType
-frequencyDesc
-StringIndexer_4.handleInvalid
-keep
-StringIndexer_4.inputCol
-nome_procedimento
-StringIndexer_4.outputCol
-nome_procedimento_idx
-StringIndexer_4.stringOrderType
-frequencyDesc
-VectorAssembler.handleInvalid
-skip
-VectorAssembler.inputCols
-['nome_municipio_vec', 'faixa_etaria_vec', 'cid10_vec', 'nome_procedimento_vec', 'idade_media', 'prop_faixa_etaria_mun', 'prop_60plus']
-VectorAssembler.outputCol
-features
+## 📈 **Métricas da Execução**
+As métricas abaixo avaliam o desempenho do modelo no conjunto de teste:
 
-Marca de execução (2)
+| Métrica | Valor | Explicação |
+|--------|--------|------------|
+| **MAE (mae_test_df)** | `1.3615` | Erro absoluto médio — indica o erro médio entre valores previstos e reais. |
+| **R² (r2_test_df)** | `0.3651` | Coeficiente de determinação — explica quanto da variância o modelo captura. |
+| **RMSE (rmse_test_df)** | `1.9233` | Raiz do erro quadrático médio — penaliza mais erros grandes. |
 
-estimator_class
-pyspark.ml.pipeline.Pipeline
-estimator_name
-Pipeline
+---
 
-Esquema de entrada (7)
-prop_faixa_etaria_mun
-double
-nome_procedimento
-string
-prop_60plus
-double
-idade_media
-double
-nome_municipio
-string
-faixa_etaria
-string
-cid10
-string
+## ⚙️ **Parâmetros da Execução**
+Abaixo estão os parâmetros utilizados nos componentes, permitindo reprodutibilidade e auditoria.
 
-Esquema de saída (0)
-Nenhum esquema de saída
+### 🔥 **GBTRegressor**
+O GBTRegressor é um modelo de árvores impulsionadas por gradiente (Gradient Boosted Trees), adequado para problemas de regressão.
 
-Mais propriedades (2)
-ID da Execução
-836d5f2c-132c-4bf4-8155-792fed8f29e0
+| Parâmetro | Valor | Explicação |
+|----------|--------|------------|
+| cacheNodeIds | False | Define se os nós de árvore serão armazenados em cache. |
+| checkpointInterval | 10 | Intervalo entre checkpoints durante o treinamento. |
+| featuresCol | features | Nome da coluna de atributos. |
+| featureSubsetStrategy | all | Todas as features são usadas em cada divisão. |
+| impurity | variance | Critério para medir impureza em regressão. |
+| labelCol | valor_procedimento_log | Coluna alvo. |
+| lossType | squared | Função de perda quadrática. |
+| maxBins | 32 | Nº de divisões para discretização contínua. |
+| maxDepth | 5 | Profundidade máxima das árvores. |
+| maxIter | 100 | Nº total de iterações (árvores). |
+| stepSize | 0.1 | Taxa de aprendizado. |
+| subsamplingRate | 1.0 | Proporção de dados usada por iteração. |
 
-ID do Livy
-93fac940-6894-4cca-9306-e885680e5e2d
+---
+
+## 🧩 **OneHotEncoder**
+Transforma índices categóricos em vetores esparsos binários (one-hot encoded).
+
+### OneHotEncoder_1 – *nome_municipio*
+| Parâmetro | Valor |
+|----------|--------|
+| dropLast | True |
+| handleInvalid | error |
+| inputCols | ['nome_municipio_idx'] |
+| outputCols | ['nome_municipio_vec'] |
+
+### OneHotEncoder_2 – *faixa_etaria*
+| Parâmetro | Valor |
+|----------|--------|
+| dropLast | True |
+| handleInvalid | error |
+| inputCols | ['faixa_etaria_idx'] |
+| outputCols | ['faixa_etaria_vec'] |
+
+### OneHotEncoder_3 – *cid10*
+| Parâmetro | Valor |
+|----------|--------|
+| dropLast | True |
+| handleInvalid | error |
+| inputCols | ['cid10_idx'] |
+| outputCols | ['cid10_vec'] |
+
+### OneHotEncoder_4 – *nome_procedimento*
+| Parâmetro | Valor |
+|----------|--------|
+| dropLast | True |
+| handleInvalid | error |
+| inputCols | ['nome_procedimento_idx'] |
+| outputCols | ['nome_procedimento_vec'] |
+
+---
+
+## 🔤 **StringIndexer**
+Converte colunas categóricas em índices numéricos ordenados por frequência.
+
+### StringIndexer_1 – *nome_municipio*
+| Parâmetro | Valor |
+|----------|--------|
+| handleInvalid | keep |
+| inputCol | nome_municipio |
+| outputCol | nome_municipio_idx |
+| stringOrderType | frequencyDesc |
+
+### StringIndexer_2 – *faixa_etaria*
+| Parâmetro | Valor |
+|----------|--------|
+| handleInvalid | keep |
+| inputCol | faixa_etaria |
+| outputCol | faixa_etaria_idx |
+| stringOrderType | frequencyDesc |
+
+### StringIndexer_3 – *cid10*
+| Parâmetro | Valor |
+|----------|--------|
+| handleInvalid | keep |
+| inputCol | cid10 |
+| outputCol | cid10_idx |
+| stringOrderType | frequencyDesc |
+
+### StringIndexer_4 – *nome_procedimento*
+| Parâmetro | Valor |
+|----------|--------|
+| handleInvalid | keep |
+| inputCol | nome_procedimento |
+| outputCol | nome_procedimento_idx |
+| stringOrderType | frequencyDesc |
+
+---
+
+## 🧱 **VectorAssembler**
+Responsável por combinar todas as features em um único vetor usado pelo modelo.
+
+| Parâmetro | Valor |
+|----------|--------|
+| handleInvalid | skip |
+| inputCols | ['nome_municipio_vec', 'faixa_etaria_vec', 'cid10_vec', 'nome_procedimento_vec', 'idade_media', 'prop_faixa_etaria_mun', 'prop_60plus'] |
+| outputCol | features |
+
+---
+
+## 🧬 **Pipeline**
+O pipeline define a cadeia de transformações aplicada aos dados antes do treinamento do modelo.
+
+
 
 
