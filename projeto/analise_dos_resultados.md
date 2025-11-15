@@ -1,10 +1,9 @@
-# 💻📉 Análise dos Resultados 🩺💊
+# 💻📉 Avaliação, Análise e Resultados🩺💊
 
 
 
-Este repositório documenta a **Análise dos Resultados** aplicada às bases Ambulatorial, Internações e Mortalidade.
+Este repositório documenta a avaliação dos modelos aplicados, bem como a análise e os resultados obtidos por meio de técnicas de machine learning, aplicadas às bases Ambulatorial, Internações e Mortalidade.
 
-A etapa de Machine Learning foi tratada anteriormente; contudo, o **Relatório Completo da Execução do ML** encontra-se aqui disponibilizado.
 
 
 ---
