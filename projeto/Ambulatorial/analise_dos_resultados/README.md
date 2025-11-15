@@ -161,7 +161,7 @@ Modelos testados porém excluídos devido a inconsistências:
    - features derivadas diretamente da variável alvo,
    - uso da coluna alvo na etapa de transformação.
 3. **Desconsiderar modelos com RMSE > 10** na escala atual dos dados.
-4. Explorar ajustes no melhor modelo (`hungry_kettle_gk7wkyg0`), como:
+4. Explorar ajustes no melhor modelo (`GBT`), como:
    - tuning de hiperparâmetros (profundidade, número de árvores, learning rate),
    - engenharia de atributos adicionais,
    - validação cruzada.
