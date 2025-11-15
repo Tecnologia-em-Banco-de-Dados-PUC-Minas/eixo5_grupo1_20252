@@ -112,7 +112,7 @@ Somente os modelos com métricas coerentes foram considerados nesta comparação
 **Observações:**
 
 - `GBT` domina as três métricas entre os válidos.
-- `RandomForest` é um meio-termo.
+- `Random Forest` é um meio-termo.
 - `GLM Poisson` tem desempenho fraco e R² negativo.
 
   
@@ -140,18 +140,13 @@ Modelos testados porém excluídos devido a inconsistências:
 
 | Modelo                      | Motivo principal |
 |-----------------------------|------------------|
-| quirky_fennel_b0m0btc4      | RMSE na casa de milhões (escala incorreta). |
-| teal_crowd_cgs77z69         | RMSE na casa de milhões (escala incorreta). |
-| red_spade_w0ts7h6q          | RMSE na casa de milhões (escala incorreta). |
-| sleepy_leaf_hcvmknx         | RMSE na casa de milhões (escala incorreta). |
-| salmon_planet_yd8161wy      | MAE undefined + RMSE enorme. |
-| honest_cushion_3xgvm6jf     | R² ≈ 1.0 (suspeita de leakage). |
-| affable_feijoa_47p8dkcf     | MAE undefined + R² ≈ 1.0 (leakage). |
-| serene_cheese_xx7kbnvz      | R² ≈ 1.0 (leakage). |
+| OneHotEncoder + GBT      | RMSE na casa de milhões (escala incorreta). |
+| LinearRegression (com aggregationDepth=2)      | MAE undefined + RMSE enorme. |
+| LinearRegression      | R² ≈ 1.0 (leakage). |
 
 ---
 
-## 7. Conclusões e recomendações
+## 7. Conclusões e recomendações 📢
 
 ### 7.1 Conclusões
 
