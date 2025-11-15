@@ -13,19 +13,19 @@ A etapa de Machine Learning foi tratada anteriormente; contudo, o **Relatório C
 
 
 **Ambulatorial**
-- **Relatório Completo da Execução do Machine Learning:** [`Ambulatorial/relatorio/`](./Ambulatorial/relatorio/README.md)  
+- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Ambulatorial/relatorio/`](./Ambulatorial/relatorio/README.md)  
 - **Análise:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise_dos_resultados/README.md)  
 
 
 
 **Internações**
-- **Relatório Completo da Execução do Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
+- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
 - **Análise:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/README.md)  
 
 
 
 **Mortalidade**
-- **Relatório Completo da Execução do Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
+- **RRelatório de Avaliação dos Modelos de Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
 - **Análise:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resultados/README.md)  
 
 
