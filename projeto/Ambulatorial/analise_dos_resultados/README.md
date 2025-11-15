@@ -152,7 +152,7 @@ Modelos testados porém excluídos devido a inconsistências:
 
 - Há **divergência de pipeline** entre execuções (principalmente nos modelos com RMSE gigantes).
 - Alguns modelos de regressão linear apresentam **R² quase perfeito**, o que sugere *data leakage* ou falha na separação treino/teste.
-- Considerando apenas modelos válidos, **hungry_kettle_gk7wkyg0** é o melhor compromisso entre erro e capacidade explicativa.
+- Considerando apenas modelos válidos, **GBT** é o melhor compromisso entre erro e capacidade explicativa.
 
 ### 7.2 Recomendações
 
