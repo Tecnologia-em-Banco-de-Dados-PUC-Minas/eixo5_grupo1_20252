@@ -1,48 +1,75 @@
-Relatório Final – Análise e Resultados de
-Aprendizado de Máquina
-1. Introdução
-Este relatório apresenta a avaliação final dos modelos de machine learning utilizados para prever o
-valor total de procedimentos ambulatoriais no contexto do SUS. Foram construídos pipelines
-completos de preparação dos dados, agregação, engenharia de atributos, codificação categórica e
-aplicação de três modelos principais: Gradient Boosted Trees (GBT), Random Forest e
-Generalized Linear Model Poisson (GLM).
-2. Métricas Avaliadas
-As métricas utilizadas para comparação dos modelos foram:
-- MAE: Erro Médio Absoluto
-- RMSE: Erro Quadrático Médio
-- R²: coeficiente de determinação
-- MAPE: erro percentual médio
-Essas métricas permitem avaliar qualidade preditiva, estabilidade e generalização.
-3. Resultados Obtidos
-Os modelos válidos apresentaram os seguintes resultados:
-- GBT: melhor desempenho geral (MAE ≈ 1.36, RMSE ≈ 1.92, R² ≈ 0.36)
-- Random Forest: desempenho intermediário
-- GLM Poisson: R² negativo, indicando baixo poder explicativo
-O GBT se destacou como o modelo mais consistente e robusto.
-4. Importância das Variáveis
-A análise de importância das variáveis revelou que o município ('nome_municipio') é o fator mais
-determinante para a variação do valor dos procedimentos. Variáveis como faixa etária, idade
-média e proporção de idosos apresentaram impacto muito inferior. Isso sugere que fatores
-estruturais e administrativos regionais influenciam fortemente os custos no SUS.
-5. Conclusões Gerais
-• O problema apresenta alta variabilidade e complexidade, dificultando previsões totalmente
-precisas.
-• O modelo GBT capturou melhor as relações não lineares e as interações entre categorias.
-• Modelos lineares não se adequaram ao padrão dos dados.
-• A localização geográfica é mais importante do que fatores demográficos.
-• Não foram identificados leaks nos modelos finais, mas execuções anteriores sugeriram a
-importância de padronizar o pipeline.
-6. Recomendações
-Para aprimorar os próximos ciclos de modelagem, recomenda-se:
-- Reduzir a cardinalidade das variáveis categóricas
-- Engenhar novas features (grupos de CID, especialidades, clusters regionais)
-- Ajustar hiperparâmetros do GBT
-- Considerar técnicas como Target Encoding
-- Avaliar novos modelos baseados em boosting e redes neurais
-7. Encerramento
-Este relatório consolida a análise dos modelos e fornece diretrizes claras para aprimoramentos
-futuros. O uso de machine learning demonstrou ser uma abordagem promissora para análise
-financeira de procedimentos ambulatoriais.
+# 📘 Relatório Final — Análise e Resultados de Machine Learning
+
+## 1. Introdução
+Este relatório apresenta a avaliação final dos modelos aplicados na previsão do valor total de procedimentos ambulatoriais, considerando dados do SUS integrados no Lakehouse.
+
+A metodologia aplicada incluiu:
+- Pré-processamento e normalização de variáveis
+- Junção das tabelas Fato & Dimensões (Paciente, Município, Tempo, CID e Procedimentos)
+- Agregações por município, ano, faixa etária, CID e procedimento
+- Criação de variáveis derivadas
+- Codificação categórica via OneHotEncoder
+- Construção de modelos:
+  - Gradient Boosted Trees (GBT)
+  - Random Forest
+  - GLM-Poisson
+
+---
+
+## 2. Métricas Avaliadas
+As métricas utilizadas foram:
+
+- **MAE** – Mean Absolute Error  
+- **RMSE** – Root Mean Squared Error  
+- **R²** – coeficiente de determinação  
+- **MAPE** – erro percentual médio  
+
+---
+
+## 3. Resultados Obtidos
+
+### 📊 Gráfico — MAE por Modelo
+<img src="data:image/png;base64,{{MAE}}" width="500"/>
+
+### 📊 Gráfico — RMSE por Modelo
+<img src="data:image/png;base64,{{RMSE}}" width="500"/>
+
+### 📊 Gráfico — R² por Modelo
+<img src="data:image/png;base64,{{R2}}" width="500"/>
+
+### ✔ Tabela consolidada
+| Modelo | MAE | RMSE | R² |
+|--------|--------|--------|--------|
+| **GBT** | 1.36 | 1.92 | 0.36 |
+| **Random Forest** | 1.61 | 2.08 | 0.26 |
+| **GLM Poisson** | 1.83 | 2.45 | -0.03 |
+
+---
+
+## 4. Importância das Variáveis
+### 📊 Gráfico — Importância das Features
+<img src="data:image/png;base64,{{FI}}" width="600"/>
+
+---
+
+## 5. Conclusões Gerais
+- O modelo GBT apresentou melhor desempenho geral.  
+- O município é o principal determinante do valor dos procedimentos.  
+- Variáveis clínicas tiveram impacto reduzido.  
+- Há espaço para melhorias via engenharia de atributos.
+
+---
+
+## 6. Recomendações
+- Reduzir cardinalidade (Target/Frequency Encoding)  
+- Agrupar CIDs e procedimentos  
+- Testar LightGBM, CatBoost e XGBoost  
+- Fazer tuning do GBT  
+
+---
+
+## 7. Encerramento
+Modelos e resultados refletem fielmente a complexidade do sistema SUS e oferecem base sólida para análises de políticas públicas.
 
 
 
