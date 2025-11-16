@@ -11,16 +11,8 @@
 
 ## 1. Introdução 📢
 
-Durante a análise foram identificados:
+Este documento consolida a avaliação de **3 modelos** treinados para previsão de valores de procedimentos.
 
-- **Modelos válidos**, com métricas consistentes.
-- **Modelos suspeitos**, com:
-  - R² extremamente negativo (indicando modelo totalmente inadequado),
-  - ou RMSE extremamente elevado, indicando baixa capacidade preditiva.
-
-Este documento consolida a avaliação de **3 modelos** treinados para previsão de taxa de mortalidade.
-
-Somente os modelos válidos foram considerados para a etapa comparativa.
 
 ---
 
@@ -36,16 +28,6 @@ Somente os modelos válidos foram considerados para a etapa comparativa.
 
 ## 3. Análise individual dos modelos 👩🏼‍💻👨🏻‍💻
 
-As métricas extraídas das imagens são:
-
-| Modelo | RMSE | R² |
-|--------|-----------------------|------------------------|
-| **GLM Poisson** | 895.3112130623467 | -4334.823097781876 |
-| **Random Forest** | 5.944672263942999 | 0.8087320059970625 |
-| **GBT** | 3.085112046519251 | 0.9485168169362375 |
-
----
-
 ### 3.1 Modelo GLM Poisson
 
 | Métrica | Valor |
@@ -55,8 +37,8 @@ As métricas extraídas das imagens são:
 
 ### Resumo:
 Modelo com **desempenho totalmente inadequado**:
-- R² extremamente negativo → pior que prever uma constante.
-- RMSE absurdamente maior que os demais.
+R² extremamente negativo → pior que prever uma constante.
+RMSE absurdamente maior que os demais.
 
 ➡️ **Modelo considerado inválido/suspeito**.
 
@@ -75,8 +57,8 @@ Modelo com **desempenho totalmente inadequado**:
 
 ### Resumo:
 Modelo com boa performance:
-- R² alto,
-- RMSE moderado.
+R² alto,
+RMSE moderado.
 
 Desempenho sólido e consistente.
 
@@ -95,8 +77,8 @@ Desempenho sólido e consistente.
 
 ### Resumo:
 Melhor desempenho entre todos os modelos:
-- **Menor RMSE**, indicando erro baixo.
-- **Maior R²**, indicando forte capacidade explicativa.
+**Menor RMSE**, indicando erro baixo.
+**Maior R²**, indicando forte capacidade explicativa.
 
 Modelo altamente competitivo e estável.
 
@@ -130,9 +112,9 @@ Modelo altamente competitivo e estável.
 
 | Posição | Modelo | Comentário |
 |---------|---------|-----------|
-| 🥇 **1º – GBT** | Melhor RMSE e melhor R². Desempenho claramente superior. |
-| 🥈 **2º – Random Forest** | Bom desempenho geral, mas inferior ao GBT. |
-| 🥉 **3º – GLM Poisson** | R² extremamente negativo e RMSE muito elevado. Considerado inválido. |
+| 🥇 1º |  GBT| Melhor RMSE e melhor R². Desempenho claramente superior. |
+| 🥈 2º | Random Forest | Bom desempenho geral, mas inferior ao GBT. |
+| 🥉 3º |  GLM Poisson | R² extremamente negativo e RMSE muito elevado. Considerado inválido. |
 
 ---
 
