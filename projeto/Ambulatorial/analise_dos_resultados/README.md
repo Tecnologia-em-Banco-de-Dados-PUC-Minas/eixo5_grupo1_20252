@@ -46,7 +46,7 @@ As métricas utilizadas foram:
 
 ---
 
-## 7. Encerramento
+## 5. Encerramento
 Modelos e resultados refletem fielmente a complexidade do sistema SUS e oferecem base sólida para análises de políticas públicas.
 
 
