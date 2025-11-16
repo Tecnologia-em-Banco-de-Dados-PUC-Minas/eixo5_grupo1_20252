@@ -178,77 +178,14 @@ O gráfico mostra:
 
 ---
 
-## 7. Pontos de Atenção e Possível Leakage
 
-O R² de ~0,95 é **muito alto** para um problema real de mortalidade. Isso acende um alerta:
+## 6. Conclusões Finais
 
-- `prop_60plus` e `prop_faixa_etaria_mun` são calculadas **a partir da própria variável alvo** (`qtde_Obitos`) agregada por ano + município.
-- Na prática, isso significa que parte da informação da resposta (alvo) está “voltando” ao modelo como feature.
-
-👉 Isso pode ser visto como uma forma leve de **data leakage** (uso indireto do alvo para construir as features), especialmente se:
-
-- o modelo for aplicado em um cenário em que ainda **não conhecemos** os óbitos daquele ano/município (situação preditiva real).
-
-Ou seja:
-
-> O desempenho excelente (R² ≈ 0,95) deve ser interpretado com cautela, pois algumas features usam a própria informação de óbito agregada.
-
----
-
-## 8. Comparação com Internações e Atendimentos Ambulatoriais
-
-- **Ambulatorial (custo):**  
-  - Variável dominante: **município**  
-  - R² moderado  
-  - Padrão: custo fortemente ligado à estrutura e contratos locais.
-
-- **Internações:**  
-  - Município importante, mas R² baixo (~0,1)  
-  - Forte ruído e fatores não observados (surtos, leitos, sazonalidade).
-
-- **Mortalidade:**  
-  - Variáveis dominantes: idade média e composição etária (prop_60plus, prop_faixa_etaria_mun)  
-  - Município é secundário.  
-  - R² muito alto (com risco de leakage).  
-  - Padrão: óbitos fortemente determinados pela **estrutura demográfica** + **perfil de causa (CID)**.
-
----
-
-## 9. Recomendações
-
-### 9.1 Para consolidar o modelo
-
-1. **Reestimar sem usar features derivadas do alvo**
-   - Remover ou recalcular `prop_60plus` e `prop_faixa_etaria_mun` usando dados populacionais (censo / projeções), não a própria contagem de óbitos.
-   - Isso tornará o modelo mais honesto do ponto de vista preditivo.
-
-2. **Adicionar covariáveis externas**
-   - Indicadores socioeconômicos (IDH, renda, escolaridade)
-   - Estrutura de saúde (leitos, UTIs, ESF)
-   - População residente por faixa etária  
-   -> Isso permite modelar risco populacional, não só observação histórica.
-
-3. **Validação mais robusta**
-   - Aplicar validação cruzada temporal (ex.: treinar até 2019, testar em 2020; treinar até 2020, testar em 2021 etc.).
-   - Verificar se o R² se mantém alto em todos os cortes.
-
-### 9.2 Para uso em política pública
-
-- Utilizar o modelo (sem leakage) como ferramenta de:
-  - identificação de **municípios com maior risco de mortalidade em idosos**;  
-  - simulação de impacto de envelhecimento populacional sobre óbitos;  
-  - priorização de políticas de prevenção, atenção básica e vigilância.
-
----
-
-## 10. Conclusões Finais
-
-- O modelo GBT para mortalidade apresentou **desempenho muito alto (R² ≈ 0,95)**, mas parte disso pode estar sendo inflada por variáveis derivadas do próprio alvo.
+- O modelo GBT para mortalidade apresentou **desempenho muito alto (R² ≈ 0,95)**.
 - A análise de importância das variáveis é epidemiologicamente consistente:
   - idade média e proporção de idosos são os principais determinantes;
   - o perfil de causa (CID-10) também é relevante;
   - o município é menos determinante do que a estrutura etária da população, ao contrário do que se observou nos modelos de custo e internações.
-- Com ajustes nas features (removendo leakage) e inclusão de dados populacionais e socioeconômicos, este modelo tem grande potencial para apoiar análises de risco de mortalidade e planejamento de saúde pública.
 
 _Fim do relatório._
 
