@@ -30,3 +30,17 @@ Este repositório documenta a avaliação dos modelos aplicados, bem como a aná
 
 
 
+# 📝🔍 Resumo 
+
+- **Ambulatorial:**  
+  - Variável dominante: **município**  
+   - Padrão: custo fortemente ligado à estrutura e contratos locais.
+
+- **Internações:**  
+  - Município importante, mas R² baixo (~0,1)  
+  - Forte ruído e fatores não observados (surtos, leitos, sazonalidade).
+
+- **Mortalidade:**  
+  - Variáveis dominantes: idade média e composição etária (prop_60plus, prop_faixa_etaria_mun)  
+  - Município é secundário.  
+  - Padrão: óbitos fortemente determinados pela **estrutura demográfica** + **perfil de causa (CID)**.
