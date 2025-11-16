@@ -24,7 +24,7 @@ Este repositório documenta a avaliação dos modelos aplicados, bem como a aná
 
 
 **Mortalidade**
-- **RRelatório de Avaliação dos Modelos de Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
+- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Mortalidade/relatorio/`](./Mortalidade/relatorio/README.md)  
 - **Relatório Final — Análise e Resultados de Machine Learning:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resultados/README.md)  
 
 
