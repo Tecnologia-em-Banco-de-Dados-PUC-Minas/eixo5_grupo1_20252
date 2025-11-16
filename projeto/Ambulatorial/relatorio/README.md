@@ -54,8 +54,8 @@ R² é moderado, mas consistente com o problema e sem sinais de erro estrutural.
 
 ### Visualização:
 
+<img width="1640" height="357" alt="image" src="https://github.com/user-attachments/assets/7fa20482-31dd-4c27-ad7a-961e484fed62" />
 
-<img width="1440" height="368" alt="image" src="https://github.com/user-attachments/assets/531ea392-f61e-4b77-9b13-4fe513b9ce89" />
 
 ---
 
@@ -74,11 +74,12 @@ Modelo **mediano**, aceitável, mas não competitivo.
 ### Visualização:
 
 
-<img width="1420" height="360" alt="image" src="https://github.com/user-attachments/assets/2d6a2cc9-1c1c-44ee-8d14-9a8d7b2948fb" />
+<img width="1640" height="352" alt="image" src="https://github.com/user-attachments/assets/4e4bb0ce-b71a-4766-a655-bc970da7cc35" />
+
 
 ---
 
-### 3.3 Modelo GLM_Poisson
+### 3.3 Modelo GLM Poisson
 
 | Métrica | Valor |
 |--------|-------|
@@ -94,7 +95,8 @@ Ainda assim é um modelo válido.
 ### Visualização:
 
 
-<img width="1432" height="372" alt="image" src="https://github.com/user-attachments/assets/9a1820da-8993-4f7a-9f53-1f6e59f0bee4" />
+<img width="1637" height="346" alt="image" src="https://github.com/user-attachments/assets/eea35627-c488-4711-9fb5-5ddb58507589" />
+
 
 ---
 
@@ -118,7 +120,8 @@ Somente os modelos com métricas coerentes foram considerados nesta comparação
   
 ### 4.1 Visualização do desempenho
 
-<img width="1537" height="524" alt="image" src="https://github.com/user-attachments/assets/d410a58e-5997-4960-8229-044f69e95b87" />
+<img width="1635" height="349" alt="image" src="https://github.com/user-attachments/assets/32aaac05-08ea-4831-a058-87e4a2bf91cb" />
+
 
 
 ---
