@@ -11,7 +11,9 @@
 
 ## 1. Introdução 📢
 
-Este documento consolida a avaliação de **3 modelos** treinados para previsão de valores de procedimentos.
+O objetivo deste relatório é analisar o desempenho de três modelos de Machine Learning aplicados à previsão de indicadores de mortalidade. As execuções incluíram modelos GLM, Random Forest e Gradient Boosted Trees, cujas métricas foram extraídas diretamente do ambiente de experimentação.
+Durante a avaliação, observou-se que um dos modelos apresentou métricas extremamente discrepantes — como R² altamente negativo e RMSE muito elevado — caracterizando desempenho inadequado e potencial inconsistência no ajustamento. Por esse motivo, apenas os modelos com resultados estatisticamente plausíveis foram considerados válidos para a comparação final.
+Com isso, este relatório oferece uma análise estruturada e segura, permitindo identificar qual modelo apresenta maior capacidade preditiva e melhor estabilidade para uso em aplicações relacionadas à modelagem de mortalidade.
 
 
 ---
