@@ -1,32 +1,24 @@
-# 📘 Relatório Final — Análise e Resultados de Machine Learning
+# 📘 Relatório Final — Análise e Resultados de Machine Learning- Ambulatorial
 
 ## 1. Introdução
-Este relatório apresenta a avaliação final dos modelos aplicados na previsão do valor total de procedimentos ambulatoriais, considerando dados do SUS integrados no Lakehouse.
+Este relatório apresenta a análise dos modelos aplicados à base **Ambulatorial** utilizando dados integrados do Lakehouse (F_AMBULATORIAL + Paciente, Município, Tempo, CID e Procedimentos)
 
-A metodologia aplicada incluiu:
-- Pré-processamento e normalização de variáveis
-- Junção das tabelas Fato & Dimensões (Paciente, Município, Tempo, CID e Procedimentos)
-- Agregações por município, ano, faixa etária, CID e procedimento
-- Criação de variáveis derivadas
-- Codificação categórica via OneHotEncoder
-- Construção de modelos:
+O objetivo principal da etapa de machine learning foi:
+
+> **Prever o valor dos procedimentos ambulatoriais+**
+
+Foram aplicados três modelos:
+
   - Gradient Boosted Trees (GBT)
   - Random Forest
   - GLM-Poisson
 
----
-
-## 2. Métricas Avaliadas
-As métricas utilizadas foram:
-
-- **MAE** – Mean Absolute Error  
-- **RMSE** – Root Mean Squared Error  
-- **R²** – coeficiente de determinação  
-- **MAPE** – erro percentual médio  
 
 ---
 
-## 3. Resultados Obtidos
+## 2. Métricas de Avaliação
+
+A tabela abaixo resume o desempenho dos modelos avaliados:
 
 
 | Modelo | MAE | RMSE | R² |
@@ -37,12 +29,34 @@ As métricas utilizadas foram:
 
 ---
 
+## 3. Análise dos Resultados
+
+### 📌 3.1 Desempenho geral
+
+- Os custos são **altamente heterogêneos** e muito mais sensíveis a:
+  - **onde** o procedimento é realizado (município);  
+  - características contratuais/estruturais;
+do que a:
+  - **quem** é o paciente (idade, faixa, perfil CID).
+    
+ 
+### 📌 3.2 Principais conclusões
+
+
+- O modelo conseguiu capturar **padrões importantes**, mas:
+
+  > Ainda há muitos fatores não observados (tipo de prestador, regime de gestão, complexidade tecnológica, pactuações regionais) que não estão nas features.
+
+
+---
 
 ## 4. Conclusões Gerais
+
+### ✔ O aprendizado de máquina aplicado ao problema mostrou:
+
 - O modelo GBT apresentou melhor desempenho geral.  
 - O município é o principal determinante do valor dos procedimentos.  
 - Variáveis clínicas tiveram impacto reduzido.  
-
 
 ---
 
