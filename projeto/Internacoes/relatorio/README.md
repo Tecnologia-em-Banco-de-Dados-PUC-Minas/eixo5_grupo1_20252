@@ -39,7 +39,7 @@ Somente os modelos válidos foram considerados para o **este relatório**.
 
 ---
 
-### 3.1 Modelo **GLM_Poisson**
+### 3.1 Modelo **GLM Poisson**
 
 | Métrica | Valor |
 |--------|-------|
@@ -100,7 +100,7 @@ Apresenta um bom equilíbrio entre as métricas, ficando logo atrás do GLM_Pois
 
 | Modelo | MAE ↓ | RMSE ↓ | R² ↑ |
 |--------|-------|--------|-------|
-| **GLM_Poisson** | **6.89** | **56.64** | **0.106** |
+| **GLM Poisson** | **6.89** | **56.64** | **0.106** |
 | **GBT** | 7.10 | 57.16 | 0.089 |
 | **Random Forest** | 7.85 | 57.91 | 0.065 |
 
@@ -122,7 +122,7 @@ Apresenta um bom equilíbrio entre as métricas, ficando logo atrás do GLM_Pois
 
 | Posição | Modelo | Comentário |
 |--------|---------|------------|
-| 🥇 **1º – GLM_Poisson** | Melhor desempenho geral em MAE, RMSE e R². |
+| 🥇 **1º – GLM Poisson** | Melhor desempenho geral em MAE, RMSE e R². |
 | 🥈 **2º – GBT** | Muito próximo do GLM, desempenho robusto. |
 | 🥉 **3º – Random Forest** | Modelo mais fraco entre os avaliados. |
 
