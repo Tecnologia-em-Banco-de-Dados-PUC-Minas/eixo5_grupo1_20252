@@ -32,16 +32,21 @@ Este repositório documenta a avaliação dos modelos aplicados, bem como a aná
 
 # 📝🔍 Resumo 
 
-- **Ambulatorial:**  
+## Ambulatorial  
 - O modelo GBT apresentou melhor desempenho geral.  
 - O município é o principal determinante do valor dos procedimentos.  
-- Variáveis clínicas tiveram impacto reduzido.
+- Variáveis clínicas tiveram impacto reduzido.  
 
-- **Internações:**  
-  - Município importante, mas R² baixo (~0,1)  
-  - Forte ruído e fatores não observados (surtos, leitos, sazonalidade).
 
-- **Mortalidade:**  
-  - Variáveis dominantes: idade média e composição etária (prop_60plus, prop_faixa_etaria_mun)  
-  - Município é secundário.  
-  - Padrão: óbitos fortemente determinados pela **estrutura demográfica** + **perfil de causa (CID)**.
+## Internações  
+- Os dados atuais **não possuem variáveis suficientes** para explicar a variabilidade das internações hospitalares.
+- O município é disparado o fator mais determinante.
+- Outros atributos têm impacto **quase nulo**.
+- A modelagem exige informações complementares externas (demográficas, estruturais e sazonais).
+
+## Mortalidade  
+- A mortalidade é fortemente determinada por:
+  - idade média da população atendida,  
+  - proporção de idosos no conjunto de óbitos,  
+  - distribuição de causas (CID-10).  
+- O município tem efeito relevante, mas menor que o observado em custos ambulatoriais e internações; aqui o **perfil demográfico/epidemiológico pesa mais** que o fator puramente geográfico.
