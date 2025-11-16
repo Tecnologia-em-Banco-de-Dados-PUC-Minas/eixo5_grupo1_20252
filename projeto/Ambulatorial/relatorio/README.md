@@ -5,9 +5,8 @@
 - [2. Métricas utilizadas](#2-métricas-utilizadas)
 - [3. Análise individual dos modelos](#3-análise-individual-dos-modelos)
 - [4. Comparação entre modelos válidos](#4-comparação-entre-modelos-válidos)
-- [5. Ranking geral](#5-ranking-geral)-
-- [6. Modelos inválidos / suspeitos](#6-modelos-inválidos--suspeitos)
-- [7. Conclusões e recomendações](#7-conclusões-e-recomendações)
+- [5. Ranking geral](#5-ranking-geral)
+
 
 
 ---
@@ -32,9 +31,9 @@ Somente os modelos válidos foram considerados para o **este relatório**.
 
 | Métrica | Interpretação |
 |--------|---------------|
-| **MAE** | *Mean Absolute Error* — erro médio absoluto. Quanto menor, melhor. |
-| **RMSE** | *Root Mean Squared Error* — erro quadrático médio. Penaliza mais erros grandes. Quanto menor, melhor. |
-| **R²** | Coeficiente de determinação. Mede a proporção da variância explicada pelo modelo. Quanto mais próximo de 1, melhor. |
+| **MAE** | Erro médio absoluto. Quanto menor, melhor. |
+| **RMSE** |Erro quadrático médio. Penaliza mais erros grandes. Quanto menor, melhor. |
+| **R²** | Proporção da variância explicada — quanto mais próximo de 1, melhor. |
 
 ---
 
@@ -59,7 +58,7 @@ R² é moderado, mas consistente com o problema e sem sinais de erro estrutural.
 
 ---
 
-### 3.2 Modelovo Random Forest
+### 3.2 Modelo Random Forest
 
 | Métrica | Valor |
 |--------|-------|
@@ -136,35 +135,3 @@ Somente os modelos com métricas coerentes foram considerados nesta comparação
 | 🥉 3º   | GLM Poisson    | R² negativo e erros maiores. |
 
 ---
-
-## 6. Modelos inválidos / suspeitos ⛔
-
-Modelos testados porém excluídos devido a inconsistências:
-
-| Modelo                      | Motivo principal |
-|-----------------------------|------------------|
-| OneHotEncoder + GBT      | RMSE na casa de milhões (escala incorreta). |
-| LinearRegression (com aggregationDepth=2)      | MAE undefined + RMSE enorme. |
-| LinearRegression      | R² ≈ 1.0 (leakage). |
-
----
-
-## 7. Conclusões e recomendações 📢
-
-### 7.1 Conclusões
-
-- Há **divergência de pipeline** entre execuções (principalmente nos modelos com RMSE gigantes).
-- Alguns modelos de regressão linear apresentam **R² quase perfeito**, o que sugere *data leakage* ou falha na separação treino/teste.
-- Considerando apenas modelos válidos, **GBT** é o melhor compromisso entre erro e capacidade explicativa.
-
-### 7.2 Recomendações
-
-1. **Padronizar o pipeline** (mesmo pré-processamento, mesma transformação do alvo) antes de comparar modelos.
-2. **Garantir que não há leakage**, conferindo:
-   - features derivadas diretamente da variável alvo,
-   - uso da coluna alvo na etapa de transformação.
-3. **Desconsiderar modelos com RMSE > 10** na escala atual dos dados.
-4. Explorar ajustes no melhor modelo (`GBT`), como:
-   - tuning de hiperparâmetros (profundidade, número de árvores, learning rate),
-   - engenharia de atributos adicionais,
-   - validação cruzada.
