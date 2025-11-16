@@ -13,17 +13,7 @@
 
 ## 1. Introdução 📢
 
-
-Durante a análise foram identificados:
-
-- **Modelos válidos**, com métricas consistentes.
-- **Modelos inválidos/suspeitos**, com:
-  - `MAE = undefined`,
-  - `RMSE` na casa de milhões,
-  - ou `R²` praticamente igual a 1 (indício de *data leakage* ou erro no pipeline).
-
 Este documento consolida a avaliação de **3 modelos** treinados para previsão de valores de procedimentos.
-Somente os modelos válidos foram considerados para o **este relatório**.
 
 ---
 
