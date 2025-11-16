@@ -12,16 +12,8 @@
 ## 1. Introdução 📢
 
 
-Durante a análise foram identificados:
-
-- **Modelos válidos**, com métricas consistentes.
-- **Modelos inválidos/suspeitos**, com:
-  - `MAE = undefined`,
-  - `RMSE` na casa de milhões,
-  - ou `R²` praticamente igual a 1 (indício de *data leakage* ou erro no pipeline).
-
-Este documento consolida a avaliação de **3 modelos** treinados para previsão de valores de procedimentos.
-Somente os modelos válidos foram considerados para o **este relatório**.
+Este relatório consolida a avaliação de três modelos de Machine Learning desenvolvidos para prever valores associados a internações hospitalares. A análise considerou diferentes abordagens — incluindo GLM, Random Forest e Gradient Boosted Trees — com foco na qualidade das previsções e na estabilidade das métricas apresentadas.
+Modelos que apresentaram resultados inconsistentes, como erros extremamente altos ou métricas indefinidas, foram descartados da comparação principal, a fim de evitar conclusões distorcidas. Assim, o presente documento destaca apenas os modelos cuja performance demonstrou coerência estatística e validade técnica, oferecendo uma visão clara e objetiva sobre seu comportamento preditivo.
 
 ---
 
