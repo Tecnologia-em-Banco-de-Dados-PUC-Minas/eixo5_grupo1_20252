@@ -13,7 +13,8 @@
 
 ## 1. Introdução 📢
 
-Este documento consolida a avaliação de **3 modelos** treinados para previsão de valores de procedimentos.
+A análise apresentada neste relatório tem como objetivo avaliar o desempenho de diferentes modelos de Machine Learning aplicados à previsão de valores de procedimentos de saúde. Durante o processo, foram identificados tanto modelos válidos quanto modelos potencialmente problemáticos, os quais exibiram métricas incoerentes — como RMSE extremamente elevado, MAE indefinido ou valores de R² anormalmente altos, que podem indicar data leakage ou falhas no pipeline de preparação dos dados.
+Para garantir uma comparação justa e confiável, apenas os modelos com métricas consistentes foram incluídos na avaliação final. Os resultados apresentados aqui visam apoiar a seleção de um modelo robusto, capaz de fornecer previsões precisas e úteis para aplicações operacionais e analíticas na área da saúde.
 
 ---
 
