@@ -42,15 +42,7 @@ As métricas utilizadas foram:
 - O modelo GBT apresentou melhor desempenho geral.  
 - O município é o principal determinante do valor dos procedimentos.  
 - Variáveis clínicas tiveram impacto reduzido.  
-- Há espaço para melhorias via engenharia de atributos.
 
----
-
-## 6. Recomendações
-- Reduzir cardinalidade (Target/Frequency Encoding)  
-- Agrupar CIDs e procedimentos  
-- Testar LightGBM, CatBoost e XGBoost  
-- Fazer tuning do GBT  
 
 ---
 
