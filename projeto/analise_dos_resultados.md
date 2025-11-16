@@ -33,8 +33,9 @@ Este repositório documenta a avaliação dos modelos aplicados, bem como a aná
 # 📝🔍 Resumo 
 
 - **Ambulatorial:**  
-  - Variável dominante: **município**  
-   - Padrão: custo fortemente ligado à estrutura e contratos locais.
+- O modelo GBT apresentou melhor desempenho geral.  
+- O município é o principal determinante do valor dos procedimentos.  
+- Variáveis clínicas tiveram impacto reduzido.
 
 - **Internações:**  
   - Município importante, mas R² baixo (~0,1)  
