@@ -2,7 +2,7 @@
 
 
 
-Este repositório documenta a avaliação dos modelos aplicados, bem como a análise e os resultados obtidos por meio de técnicas de machine learning, aplicadas às bases Ambulatorial, Internações e Mortalidade.
+Este repositório documenta a avaliação dos modelos de **Machine Learning** aplicados, bem como a análise e os resultados obtidos por meio de técnicas de machine learning, aplicadas às bases Ambulatorial, Internações e Mortalidade.
 
 
 
@@ -12,20 +12,20 @@ Este repositório documenta a avaliação dos modelos aplicados, bem como a aná
 
 
 ### Ambulatorial
-- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Ambulatorial/relatorio/`](./Ambulatorial/relatorio/README.md)  
-- **Relatório Final — Análise e Resultados de Machine Learning:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise_dos_resultados/README.md)  
+- **Relatório de Avaliação dos Modelos:** [`Ambulatorial/relatorio/`](./Ambulatorial/relatorio/README.md)  
+- **Relatório Final — Análise e Resultados:** [`Ambulatorial/analise dos resultados/`](./Ambulatorial/analise_dos_resultados/README.md)  
 
 
 
 ### Internações
-- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
-- **Relatório Final — Análise e Resultados de Machine Learning:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/README.md)  
+- **Relatório de Avaliação dos Modelos:** [`Internacoes/relatorio/`](./Internacoes/relatorio/README.md)  
+- **Relatório Final — Análise e Resultados:** [`Internacoes/analise dos resultados/`](./Internacoes/analise_dos_resultados/README.md)  
 
 
 
 ### Mortalidade
-- **Relatório de Avaliação dos Modelos de Machine Learning:** [`Mortalidade/relatorio/`](./Mortalidade/relatorio/README.md)  
-- **Relatório Final — Análise e Resultados de Machine Learning:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resultados/README.md)  
+- **Relatório de Avaliação dos Modelos:** [`Mortalidade/relatorio/`](./Mortalidade/relatorio/README.md)  
+- **Relatório Final — Análise e Resultados:** [`Mortalidade/analise dos resultados/`](./Mortalidade/analise_dos_resultados/README.md)  
 
 
 ---
