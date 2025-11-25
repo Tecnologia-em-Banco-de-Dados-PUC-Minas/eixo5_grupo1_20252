@@ -31,4 +31,4 @@ Cristiano Geraldo Teixeira Silva
 | ETAPA 3        |[Pré-processamento](projeto/pre_processamento.md) |
 | ETAPA 4        |[Aprendizagem de Máquina](projeto/aprendizado_de_maquina.md)|
 | ETAPA 5        |[Análise dos Resultados](projeto/analise_dos_resultados.md)|
-| ETAPA 6        |[Otimização](projeto/Otimizacao.md) |
+| ETAPA 6        |[Otimização](projeto/otimizacoes.md) |
