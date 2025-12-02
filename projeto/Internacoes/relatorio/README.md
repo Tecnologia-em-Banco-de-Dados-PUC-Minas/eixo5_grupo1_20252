@@ -114,9 +114,9 @@ Apresenta um bom equilíbrio entre as métricas, ficando logo atrás do GLM_Pois
 
 | Posição | Modelo | Comentário |
 |--------|---------|------------|
-| 🥇 **1º – GLM Poisson** | Melhor desempenho geral em MAE, RMSE e R². |
-| 🥈 **2º – GBT** | Muito próximo do GLM, desempenho robusto. |
-| 🥉 **3º – Random Forest** | Modelo mais fraco entre os avaliados. |
+| 🥇 1º | GLM Poisson | Melhor desempenho geral em MAE, RMSE e R². |
+| 🥈 2º | GBT | Muito próximo do GLM, desempenho robusto. |
+| 🥉 3º | Random Forest | Modelo mais fraco entre os avaliados. |
 
 ---
 
