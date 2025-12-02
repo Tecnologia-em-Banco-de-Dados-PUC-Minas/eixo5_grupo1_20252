@@ -32,3 +32,4 @@ Cristiano Geraldo Teixeira Silva
 | ETAPA 4        |[Aprendizagem de Máquina](projeto/aprendizado_de_maquina.md)|
 | ETAPA 5        |[Análise dos Resultados](projeto/analise_dos_resultados.md)|
 | ETAPA 6        |[Otimização](projeto/otimizacoes.md) |
+| Apresentação   |[PowerPoint](projeto/apresentacao.md) |
