@@ -105,7 +105,9 @@ Modelo altamente competitivo e estável.
 - **GLM Poisson** é **claramente inválido**, com métricas dilatadas e R² extremamente negativo.
 
 ### 4.1 Visualização do desempenho
-<img width="1642" height="342" alt="image" src="https://github.com/user-attachments/assets/9cc9f866-ee92-4102-ab7a-e0d44aff8c8a" />
+<<<img width="1527" height="435" alt="Captura de ecrã 2025-12-02 200937" src="https://github.com/user-attachments/assets/fae1dc40-e290-4b7e-9895-f411a18bc46d" />
+ />
+ />
 
 
 ---
